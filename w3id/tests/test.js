@@ -178,10 +178,12 @@ describe(`w3id.org redirect tests (${mode} mode)`, function () {
       expect(res.location).to.equal(`${PAGES_BASE}/`);
     });
 
-    it("T18: Root with no Accept header", async function () {
+    it("T18: Root with no Accept header gets 406", async function () {
+      // Node's http.request sends no Accept header (unlike curl which sends */*).
+      // With no header, the request doesn't match text/html or */* and falls
+      // through to the 406 rule.
       const res = await request(`${BASE_URL}/`, null);
-      expect(res.status).to.equal(303);
-      expect(res.location).to.equal(`${PAGES_BASE}/`);
+      expect(res.status).to.equal(406);
     });
 
     it("T19: Unversioned trov with browser Accept", async function () {

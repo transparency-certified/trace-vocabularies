@@ -1,0 +1,16 @@
+{
+  "name": "w3id-redirect-tests",
+  "version": "1.0.0",
+  "description": "Tests for TRACE project w3id.org redirect rules",
+  "scripts": {
+    "test": "mocha --timeout 10000 test.js",
+    "test:local": "W3ID_MODE=local mocha --timeout 30000 test.js",
+    "test:remote": "W3ID_MODE=remote mocha --timeout 10000 test.js",
+    "docker:start": "node docker.js start",
+    "docker:stop": "node docker.js stop"
+  },
+  "devDependencies": {
+    "mocha": "^11.0.0",
+    "chai": "^4.5.0"
+  }
+}

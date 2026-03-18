@@ -8,10 +8,9 @@ TRACE develops standards for certifying that computational research results were
 
 | Path | Description |
 |------|-------------|
-| `/trace/trov/0.1` | TROV vocabulary version 0.1 (content-negotiated: HTML, Turtle, JSON-LD, RDF/XML, N-Triples) |
-| `/trace/trov/` | Vocabulary index page (browsers); 406 Not Acceptable (RDF clients) |
-| `/trace/2023/05/trov` | Pre-release namespace (retired, redirects to migration docs) |
-| `/trace/` | Project landing page |
+| `/trace/trov/{version}` | TROV vocabulary (content-negotiated: HTML, Turtle, JSON-LD, RDF/XML, N-Triples) |
+| `/trace/2023/05/trov` | Pre-release namespace (content-negotiated, same as versioned) |
+| `/trace/trov/`, `/trace/`, etc. | Vocabulary index page (browsers); 406 Not Acceptable (others) |
 
 ## References
 

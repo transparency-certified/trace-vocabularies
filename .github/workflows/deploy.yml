@@ -70,6 +70,23 @@ jobs:
               mv out/site/trov/prerelease/ontology.nt out/site/trov/prerelease/trov.nt
               rm -r out/build
 
+      # Verify expected files exist before deploying
+      - name: Verify build output
+        run: |
+          echo "Checking TROV 0.1..."
+          test -f site/trov/0.1/index.html
+          test -f site/trov/0.1/trov.ttl
+          test -f site/trov/0.1/trov.jsonld
+          test -f site/trov/0.1/trov.rdf
+          test -f site/trov/0.1/trov.nt
+          echo "Checking TROV pre-release..."
+          test -f site/trov/prerelease/index.html
+          test -f site/trov/prerelease/trov.ttl
+          test -f site/trov/prerelease/trov.jsonld
+          test -f site/trov/prerelease/trov.rdf
+          test -f site/trov/prerelease/trov.nt
+          echo "All expected files present."
+
       # Deploy the built site to the gh-pages branch
       # Only runs on push to main, not on manual dispatches from PRs
       - name: Deploy to GitHub Pages

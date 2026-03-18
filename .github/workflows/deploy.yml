@@ -1,0 +1,51 @@
+# Builds vocabulary documentation using Widoco and deploys to GitHub Pages.
+# Each vocabulary is a git submodule containing .ttl source files.
+# Widoco generates HTML docs and serializations (.jsonld, .rdf, .nt).
+
+name: Build and deploy vocabulary docs
+
+# Triggers on push to main or manual dispatch from the Actions tab
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out this repo and all vocabulary submodules
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      # Run Widoco to generate documentation for TROV 0.1
+      - name: Build TROV 0.1 docs
+        uses: addnab/docker-run-action@v3
+        with:
+          image: craigwillis/widoco:latest
+          options: -v ${{ github.workspace }}/trov/0.1/trov.config:/usr/local/widoco/config/config.properties -v ${{ github.workspace }}/trov/0.1/:/usr/local/widoco/in -v ${{ github.workspace }}:/usr/local/widoco/out
+          run: |
+              # Generate docs from the .ttl source
+              java -jar widoco.jar -ontFile in/trov.ttl -outFolder out/site -rewriteAll
+              # Organize output under trov/0.1/ to match the GitHub Pages URL structure
+              mkdir -p out/site/trov/0.1
+              mv out/site/doc/* out/site/trov/0.1/
+              # Rename Widoco's default output files to vocabulary-specific names
+              # so the w3id.org content negotiation rules can find them
+              mv out/site/trov/0.1/index-en.html out/site/trov/0.1/index.html
+              mv out/site/trov/0.1/ontology.ttl out/site/trov/0.1/trov.ttl
+              mv out/site/trov/0.1/ontology.jsonld out/site/trov/0.1/trov.jsonld
+              mv out/site/trov/0.1/ontology.rdf out/site/trov/0.1/trov.rdf
+              mv out/site/trov/0.1/ontology.nt out/site/trov/0.1/trov.nt
+              rmdir out/site/doc
+
+      # Deploy the built site to the gh-pages branch
+      # Only runs on push to main, not on manual dispatches from PRs
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site

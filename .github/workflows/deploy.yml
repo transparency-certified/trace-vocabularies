@@ -30,8 +30,14 @@ jobs:
               # Generate docs from the .ttl source
               java -jar widoco.jar -ontFile in/trov.ttl -outFolder out/build -rewriteAll
               # Organize output under trov/0.1/ to match the GitHub Pages URL structure
+              # Widoco puts output in doc/ when ontology IRI ends with /,
+              # directly in the output folder otherwise
               mkdir -p out/site/trov/0.1
-              mv out/build/doc/* out/site/trov/0.1/
+              if [ -d out/build/doc ]; then
+                mv out/build/doc/* out/site/trov/0.1/
+              else
+                mv out/build/* out/site/trov/0.1/
+              fi
               # Rename Widoco's default output files to vocabulary-specific names
               # so the w3id.org content negotiation rules can find them
               mv out/site/trov/0.1/index-en.html out/site/trov/0.1/index.html
@@ -50,7 +56,13 @@ jobs:
           run: |
               java -jar widoco.jar -ontFile in/trov.ttl -outFolder out/build -rewriteAll
               mkdir -p out/site/trov/prerelease
-              mv out/build/doc/* out/site/trov/prerelease/
+              # Widoco puts output in doc/ when ontology IRI ends with /,
+              # directly in the output folder otherwise
+              if [ -d out/build/doc ]; then
+                mv out/build/doc/* out/site/trov/prerelease/
+              else
+                mv out/build/* out/site/trov/prerelease/
+              fi
               mv out/site/trov/prerelease/index-en.html out/site/trov/prerelease/index.html
               mv out/site/trov/prerelease/ontology.ttl out/site/trov/prerelease/trov.ttl
               mv out/site/trov/prerelease/ontology.jsonld out/site/trov/prerelease/trov.jsonld

@@ -1,0 +1,3 @@
+[submodule "trov"]
+	path = trov
+	url = https://github.com/transparency-certified/trov

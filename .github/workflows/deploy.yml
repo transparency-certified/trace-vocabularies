@@ -28,10 +28,10 @@ jobs:
           options: -v ${{ github.workspace }}/trov/0.1/trov.config:/usr/local/widoco/config/config.properties -v ${{ github.workspace }}/trov/0.1/:/usr/local/widoco/in -v ${{ github.workspace }}:/usr/local/widoco/out
           run: |
               # Generate docs from the .ttl source
-              java -jar widoco.jar -ontFile in/trov.ttl -outFolder out/site -rewriteAll
+              java -jar widoco.jar -ontFile in/trov.ttl -outFolder out/build -rewriteAll
               # Organize output under trov/0.1/ to match the GitHub Pages URL structure
               mkdir -p out/site/trov/0.1
-              mv out/site/doc/* out/site/trov/0.1/
+              mv out/build/doc/* out/site/trov/0.1/
               # Rename Widoco's default output files to vocabulary-specific names
               # so the w3id.org content negotiation rules can find them
               mv out/site/trov/0.1/index-en.html out/site/trov/0.1/index.html
@@ -39,7 +39,24 @@ jobs:
               mv out/site/trov/0.1/ontology.jsonld out/site/trov/0.1/trov.jsonld
               mv out/site/trov/0.1/ontology.rdf out/site/trov/0.1/trov.rdf
               mv out/site/trov/0.1/ontology.nt out/site/trov/0.1/trov.nt
-              rmdir out/site/doc
+              rm -r out/build
+
+      # Run Widoco to generate documentation for TROV pre-release
+      - name: Build TROV pre-release docs
+        uses: addnab/docker-run-action@v3
+        with:
+          image: craigwillis/widoco:latest
+          options: -v ${{ github.workspace }}/trov/prerelease/trov.config:/usr/local/widoco/config/config.properties -v ${{ github.workspace }}/trov/prerelease/:/usr/local/widoco/in -v ${{ github.workspace }}:/usr/local/widoco/out
+          run: |
+              java -jar widoco.jar -ontFile in/trov.ttl -outFolder out/build -rewriteAll
+              mkdir -p out/site/trov/prerelease
+              mv out/build/doc/* out/site/trov/prerelease/
+              mv out/site/trov/prerelease/index-en.html out/site/trov/prerelease/index.html
+              mv out/site/trov/prerelease/ontology.ttl out/site/trov/prerelease/trov.ttl
+              mv out/site/trov/prerelease/ontology.jsonld out/site/trov/prerelease/trov.jsonld
+              mv out/site/trov/prerelease/ontology.rdf out/site/trov/prerelease/trov.rdf
+              mv out/site/trov/prerelease/ontology.nt out/site/trov/prerelease/trov.nt
+              rm -r out/build
 
       # Deploy the built site to the gh-pages branch
       # Only runs on push to main, not on manual dispatches from PRs

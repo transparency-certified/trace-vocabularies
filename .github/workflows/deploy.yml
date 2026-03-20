@@ -70,9 +70,15 @@ jobs:
               mv out/site/trov/prerelease/ontology.nt out/site/trov/prerelease/trov.nt
               rm -r out/build
 
+      # Copy the vocabulary index page into the site output
+      - name: Add index page
+        run: cp index.html site/index.html
+
       # Verify expected files exist before deploying
       - name: Verify build output
         run: |
+          echo "Checking index page..."
+          test -f site/index.html
           echo "Checking TROV 0.1..."
           test -f site/trov/0.1/index.html
           test -f site/trov/0.1/trov.ttl

@@ -20,6 +20,13 @@ jobs:
         with:
           submodules: true
 
+      # Create site directory and copy index page before Docker steps
+      # (Docker runs as root, so files it creates aren't writable by the runner)
+      - name: Initialize site directory
+        run: |
+          mkdir -p site
+          cp index.html site/index.html
+
       # Run Widoco to generate documentation for TROV 0.1
       - name: Build TROV 0.1 docs
         uses: addnab/docker-run-action@v3
@@ -69,10 +76,6 @@ jobs:
               mv out/site/trov/prerelease/ontology.rdf out/site/trov/prerelease/trov.rdf
               mv out/site/trov/prerelease/ontology.nt out/site/trov/prerelease/trov.nt
               rm -r out/build
-
-      # Copy the vocabulary index page into the site output
-      - name: Add index page
-        run: cp index.html site/index.html
 
       # Verify expected files exist before deploying
       - name: Verify build output

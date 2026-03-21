@@ -48,6 +48,8 @@ jobs:
               # Rename Widoco's default output files to vocabulary-specific names
               # so the w3id.org content negotiation rules can find them
               mv out/site/trov/0.1/index-en.html out/site/trov/0.1/index.html
+              # Override Widoco's generated abstract with our custom version
+              cp out/trov/0.1/sections/abstract-en.html out/site/trov/0.1/sections/abstract-en.html
               mv out/site/trov/0.1/ontology.ttl out/site/trov/0.1/trov.ttl
               mv out/site/trov/0.1/ontology.jsonld out/site/trov/0.1/trov.jsonld
               mv out/site/trov/0.1/ontology.rdf out/site/trov/0.1/trov.rdf
@@ -71,6 +73,8 @@ jobs:
                 mv out/build/* out/site/trov/prerelease/
               fi
               mv out/site/trov/prerelease/index-en.html out/site/trov/prerelease/index.html
+              # Override Widoco's generated abstract with custom version
+              cp out/trov/prerelease/sections/abstract-en.html out/site/trov/prerelease/sections/abstract-en.html
               mv out/site/trov/prerelease/ontology.ttl out/site/trov/prerelease/trov.ttl
               mv out/site/trov/prerelease/ontology.jsonld out/site/trov/prerelease/trov.jsonld
               mv out/site/trov/prerelease/ontology.rdf out/site/trov/prerelease/trov.rdf

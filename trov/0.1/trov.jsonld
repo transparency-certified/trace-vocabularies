@@ -244,6 +244,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#accessedArrangement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRP to an arrangement it read from."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TrustedResearchPerformance"
   } ],
@@ -271,6 +274,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#contributedToArrangement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRP to an arrangement it wrote to."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TrustedResearchPerformance"
   } ],
@@ -307,6 +313,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#endedAtTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "When the performance ended."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TrustedResearchPerformance"
   } ],
@@ -319,6 +328,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#hasArrangement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRO to an artifact arrangement it describes."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TransparentResearchObject"
   } ],
@@ -331,6 +343,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#hasArtifact",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a composition to an artifact it contains."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#ArtifactComposition"
   } ],
@@ -343,6 +358,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#hasArtifactLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links an arrangement to one of its artifact locations."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#ArtifactArrangement"
   } ],
@@ -355,6 +373,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#hasAttribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRO to a transparency attribute asserted for it."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TransparentResearchObject"
   } ],
@@ -367,6 +388,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#hasCapability",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRS to a capability it declares."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TrustedResearchSystem"
   } ],
@@ -379,6 +403,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#hasComposition",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRO to the composition of artifacts it describes."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TransparentResearchObject"
   } ],
@@ -391,6 +418,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#hasFingerprint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a composition to its fingerprint."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#ArtifactComposition"
   } ],
@@ -403,6 +433,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#hasPerformance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRO to a TRP it describes."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TransparentResearchObject"
   } ],
@@ -415,6 +448,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#hasPerformanceAttribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRP to a transparency attribute claimed for it."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TrustedResearchPerformance"
   } ],
@@ -504,6 +540,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#startedAtTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "When the performance began."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TrustedResearchPerformance"
   } ],
@@ -539,6 +578,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#wasAssembledBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRO to the TRS that produced and signed it."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TransparentResearchObject"
   } ],
@@ -551,6 +593,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#wasConductedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRP to the TRS that conducted it."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TrustedResearchPerformance"
   } ],
@@ -563,6 +608,9 @@
 }, {
   "@id" : "https://w3id.org/trace/trov/0.1#wasTimestampedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRO to a TSA that timestamped the TRS signature."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/trov/0.1#TransparentResearchObject"
   } ],

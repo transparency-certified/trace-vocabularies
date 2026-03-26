@@ -156,6 +156,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#accessedArrangement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRP to an arrangement it read from."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
   } ],
@@ -168,6 +171,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#contact",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Contact email for the TRS."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
   } ],
@@ -180,6 +186,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#contributedToArrangement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRP to an arrangement it wrote to."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
   } ],
@@ -192,6 +201,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#description",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Description of the TRS."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
   } ],
@@ -204,6 +216,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#endedAtTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "When the performance ended."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
   } ],
@@ -216,6 +231,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#hasArrangement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRO to an artifact arrangement."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TransparentResearchObject"
   } ],
@@ -228,6 +246,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#hasArtifact",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a composition or locus to an artifact."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactComposition"
   } ],
@@ -252,6 +273,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#hasCapability",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRS to a capability it declares."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
   } ],
@@ -264,6 +288,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#hasComposition",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRO to its artifact composition."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TransparentResearchObject"
   } ],
@@ -276,6 +303,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#hasFingerprint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a composition to its fingerprint."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactComposition"
   } ],
@@ -288,6 +318,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#hasLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Resource path for an artifact within an arrangement."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactLocus"
   } ],
@@ -300,6 +333,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#hasLocus",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links an arrangement to one of its loci."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactArrangement"
   } ],
@@ -312,6 +348,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#hasPerformance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRO to a TRP it describes."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TransparentResearchObject"
   } ],
@@ -324,6 +363,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#hasPerformanceAttribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRP to a transparency attribute claimed for it."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
   } ],
@@ -351,6 +393,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Short name for the TRS."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
   } ],
@@ -363,6 +408,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#owner",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Owner of the TRS."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
   } ],
@@ -375,6 +423,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#publicKey",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The public key associated with the TRS. ASCII-armored GPG key."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
   } ],
@@ -399,6 +450,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#startedAtTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "When the performance began."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
   } ],
@@ -411,6 +465,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#url",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "URL for the TRS."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
   } ],
@@ -438,6 +495,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#wasAssembledBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRO to the TRS that produced it."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TransparentResearchObject"
   } ],
@@ -450,6 +510,9 @@
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#wasConductedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a TRP to the TRS that conducted it."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
   } ],

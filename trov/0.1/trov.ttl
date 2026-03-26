@@ -38,6 +38,7 @@
 <https://w3id.org/trace/trov/0.1#accessedArrangement> rdf:type owl:ObjectProperty ;
                                                       rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
                                                       rdfs:range <https://w3id.org/trace/trov/0.1#ArtifactArrangement> ;
+                                                      rdfs:comment "Links a TRP to an arrangement it read from." ;
                                                       rdfs:label "accessedArrangement" .
 
 
@@ -53,6 +54,7 @@
 <https://w3id.org/trace/trov/0.1#contributedToArrangement> rdf:type owl:ObjectProperty ;
                                                            rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
                                                            rdfs:range <https://w3id.org/trace/trov/0.1#ArtifactArrangement> ;
+                                                           rdfs:comment "Links a TRP to an arrangement it wrote to." ;
                                                            rdfs:label "contributedToArrangement" .
 
 
@@ -60,6 +62,7 @@
 <https://w3id.org/trace/trov/0.1#hasArrangement> rdf:type owl:ObjectProperty ;
                                                  rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
                                                  rdfs:range <https://w3id.org/trace/trov/0.1#ArtifactArrangement> ;
+                                                 rdfs:comment "Links a TRO to an artifact arrangement it describes." ;
                                                  rdfs:label "hasArrangement" .
 
 
@@ -67,6 +70,7 @@
 <https://w3id.org/trace/trov/0.1#hasArtifact> rdf:type owl:ObjectProperty ;
                                               rdfs:domain <https://w3id.org/trace/trov/0.1#ArtifactComposition> ;
                                               rdfs:range <https://w3id.org/trace/trov/0.1#ResearchArtifact> ;
+                                              rdfs:comment "Links a composition to an artifact it contains." ;
                                               rdfs:label "hasArtifact" .
 
 
@@ -74,6 +78,7 @@
 <https://w3id.org/trace/trov/0.1#hasArtifactLocation> rdf:type owl:ObjectProperty ;
                                                       rdfs:domain <https://w3id.org/trace/trov/0.1#ArtifactArrangement> ;
                                                       rdfs:range <https://w3id.org/trace/trov/0.1#ArtifactLocation> ;
+                                                      rdfs:comment "Links an arrangement to one of its artifact locations." ;
                                                       rdfs:label "hasArtifactLocation" .
 
 
@@ -81,6 +86,7 @@
 <https://w3id.org/trace/trov/0.1#hasAttribute> rdf:type owl:ObjectProperty ;
                                                rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
                                                rdfs:range <https://w3id.org/trace/trov/0.1#TROAttribute> ;
+                                               rdfs:comment "Links a TRO to a transparency attribute asserted for it." ;
                                                rdfs:label "hasAttribute" .
 
 
@@ -88,6 +94,7 @@
 <https://w3id.org/trace/trov/0.1#hasCapability> rdf:type owl:ObjectProperty ;
                                                 rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchSystem> ;
                                                 rdfs:range <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                rdfs:comment "Links a TRS to a capability it declares." ;
                                                 rdfs:label "hasCapability" .
 
 
@@ -95,6 +102,7 @@
 <https://w3id.org/trace/trov/0.1#hasComposition> rdf:type owl:ObjectProperty ;
                                                  rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
                                                  rdfs:range <https://w3id.org/trace/trov/0.1#ArtifactComposition> ;
+                                                 rdfs:comment "Links a TRO to the composition of artifacts it describes." ;
                                                  rdfs:label "hasComposition" .
 
 
@@ -102,6 +110,7 @@
 <https://w3id.org/trace/trov/0.1#hasFingerprint> rdf:type owl:ObjectProperty ;
                                                  rdfs:domain <https://w3id.org/trace/trov/0.1#ArtifactComposition> ;
                                                  rdfs:range <https://w3id.org/trace/trov/0.1#CompositionFingerprint> ;
+                                                 rdfs:comment "Links a composition to its fingerprint." ;
                                                  rdfs:label "hasFingerprint" .
 
 
@@ -109,6 +118,7 @@
 <https://w3id.org/trace/trov/0.1#hasPerformance> rdf:type owl:ObjectProperty ;
                                                  rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
                                                  rdfs:range <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
+                                                 rdfs:comment "Links a TRO to a TRP it describes." ;
                                                  rdfs:label "hasPerformance" .
 
 
@@ -116,6 +126,7 @@
 <https://w3id.org/trace/trov/0.1#hasPerformanceAttribute> rdf:type owl:ObjectProperty ;
                                                           rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
                                                           rdfs:range <https://w3id.org/trace/trov/0.1#TRPAttribute> ;
+                                                          rdfs:comment "Links a TRP to a transparency attribute claimed for it." ;
                                                           rdfs:label "hasPerformanceAttribute" .
 
 
@@ -123,6 +134,7 @@
 <https://w3id.org/trace/trov/0.1#wasAssembledBy> rdf:type owl:ObjectProperty ;
                                                  rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
                                                  rdfs:range <https://w3id.org/trace/trov/0.1#TrustedResearchSystem> ;
+                                                 rdfs:comment "Links a TRO to the TRS that produced and signed it." ;
                                                  rdfs:label "wasAssembledBy" .
 
 
@@ -130,6 +142,7 @@
 <https://w3id.org/trace/trov/0.1#wasConductedBy> rdf:type owl:ObjectProperty ;
                                                  rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
                                                  rdfs:range <https://w3id.org/trace/trov/0.1#TrustedResearchSystem> ;
+                                                 rdfs:comment "Links a TRP to the TRS that conducted it." ;
                                                  rdfs:label "wasConductedBy" .
 
 
@@ -137,6 +150,7 @@
 <https://w3id.org/trace/trov/0.1#wasTimestampedBy> rdf:type owl:ObjectProperty ;
                                                    rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
                                                    rdfs:range <https://w3id.org/trace/trov/0.1#TimeStampingAuthority> ;
+                                                   rdfs:comment "Links a TRO to a TSA that timestamped the TRS signature." ;
                                                    rdfs:label "wasTimestampedBy" .
 
 
@@ -148,6 +162,7 @@
 <https://w3id.org/trace/trov/0.1#endedAtTime> rdf:type owl:DatatypeProperty ;
                                               rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
                                               rdfs:range rdfs:Literal ;
+                                              rdfs:comment "When the performance ended." ;
                                               rdfs:label "endedAtTime" .
 
 
@@ -193,6 +208,7 @@
 <https://w3id.org/trace/trov/0.1#startedAtTime> rdf:type owl:DatatypeProperty ;
                                                 rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
                                                 rdfs:range rdfs:Literal ;
+                                                rdfs:comment "When the performance began." ;
                                                 rdfs:label "startedAtTime" .
 
 

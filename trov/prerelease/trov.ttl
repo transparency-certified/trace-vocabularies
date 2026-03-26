@@ -31,6 +31,7 @@
 :accessedArrangement rdf:type owl:ObjectProperty ;
                      rdfs:domain :TrustedResearchPerformance ;
                      rdfs:range :ArtifactArrangement ;
+                     rdfs:comment "Links a TRP to an arrangement it read from." ;
                      rdfs:label "accessedArrangement" .
 
 
@@ -38,6 +39,7 @@
 :contributedToArrangement rdf:type owl:ObjectProperty ;
                           rdfs:domain :TrustedResearchPerformance ;
                           rdfs:range :ArtifactArrangement ;
+                          rdfs:comment "Links a TRP to an arrangement it wrote to." ;
                           rdfs:label "contributedToArrangement" .
 
 
@@ -45,6 +47,7 @@
 :hasArrangement rdf:type owl:ObjectProperty ;
                 rdfs:domain :TransparentResearchObject ;
                 rdfs:range :ArtifactArrangement ;
+                rdfs:comment "Links a TRO to an artifact arrangement." ;
                 rdfs:label "hasArrangement" .
 
 
@@ -52,6 +55,7 @@
 :hasArtifact rdf:type owl:ObjectProperty ;
              rdfs:domain :ArtifactComposition ;
              rdfs:range :ResearchArtifact ;
+             rdfs:comment "Links a composition or locus to an artifact." ;
              rdfs:label "hasArtifact" .
 
 
@@ -59,6 +63,7 @@
 :hasCapability rdf:type owl:ObjectProperty ;
                rdfs:domain :TrustedResearchSystem ;
                rdfs:range :TRSCapability ;
+               rdfs:comment "Links a TRS to a capability it declares." ;
                rdfs:label "hasCapability" .
 
 
@@ -66,6 +71,7 @@
 :hasComposition rdf:type owl:ObjectProperty ;
                 rdfs:domain :TransparentResearchObject ;
                 rdfs:range :ArtifactComposition ;
+                rdfs:comment "Links a TRO to its artifact composition." ;
                 rdfs:label "hasComposition" .
 
 
@@ -73,6 +79,7 @@
 :hasFingerprint rdf:type owl:ObjectProperty ;
                 rdfs:domain :ArtifactComposition ;
                 rdfs:range :CompositionFingerprint ;
+                rdfs:comment "Links a composition to its fingerprint." ;
                 rdfs:label "hasFingerprint" .
 
 
@@ -80,6 +87,7 @@
 :hasLocus rdf:type owl:ObjectProperty ;
           rdfs:domain :ArtifactArrangement ;
           rdfs:range :ArtifactLocus ;
+          rdfs:comment "Links an arrangement to one of its loci." ;
           rdfs:label "hasLocus" .
 
 
@@ -87,6 +95,7 @@
 :hasPerformance rdf:type owl:ObjectProperty ;
                 rdfs:domain :TransparentResearchObject ;
                 rdfs:range :TrustedResearchPerformance ;
+                rdfs:comment "Links a TRO to a TRP it describes." ;
                 rdfs:label "hasPerformance" .
 
 
@@ -94,6 +103,7 @@
 :hasPerformanceAttribute rdf:type owl:ObjectProperty ;
                          rdfs:domain :TrustedResearchPerformance ;
                          rdfs:range :TRPAttribute ;
+                         rdfs:comment "Links a TRP to a transparency attribute claimed for it." ;
                          rdfs:label "hasPerformanceAttribute" .
 
 
@@ -109,6 +119,7 @@
 :wasAssembledBy rdf:type owl:ObjectProperty ;
                 rdfs:domain :TransparentResearchObject ;
                 rdfs:range :TrustedResearchSystem ;
+                rdfs:comment "Links a TRO to the TRS that produced it." ;
                 rdfs:label "wasAssembledBy" .
 
 
@@ -116,6 +127,7 @@
 :wasConductedBy rdf:type owl:ObjectProperty ;
                 rdfs:domain :TrustedResearchPerformance ;
                 rdfs:range :TrustedResearchSystem ;
+                rdfs:comment "Links a TRP to the TRS that conducted it." ;
                 rdfs:label "wasConductedBy" .
 
 
@@ -127,6 +139,7 @@
 :contact rdf:type owl:DatatypeProperty ;
          rdfs:domain :TrustedResearchSystem ;
          rdfs:range rdfs:Literal ;
+         rdfs:comment "Contact email for the TRS." ;
          rdfs:label "contact" .
 
 
@@ -134,6 +147,7 @@
 :description rdf:type owl:DatatypeProperty ;
              rdfs:domain :TrustedResearchSystem ;
              rdfs:range rdfs:Literal ;
+             rdfs:comment "Description of the TRS." ;
              rdfs:label "description" .
 
 
@@ -141,6 +155,7 @@
 :endedAtTime rdf:type owl:DatatypeProperty ;
              rdfs:domain :TrustedResearchPerformance ;
              rdfs:range rdfs:Literal ;
+             rdfs:comment "When the performance ended." ;
              rdfs:label "endedAtTime" .
 
 
@@ -148,6 +163,7 @@
 :hasLocation rdf:type owl:DatatypeProperty ;
              rdfs:domain :ArtifactLocus ;
              rdfs:range rdfs:Literal ;
+             rdfs:comment "Resource path for an artifact within an arrangement." ;
              rdfs:label "hasLocation" .
 
 
@@ -163,6 +179,7 @@
 :name rdf:type owl:DatatypeProperty ;
       rdfs:domain :TrustedResearchSystem ;
       rdfs:range rdfs:Literal ;
+      rdfs:comment "Short name for the TRS." ;
       rdfs:label "name" .
 
 
@@ -170,6 +187,7 @@
 :owner rdf:type owl:DatatypeProperty ;
        rdfs:domain :TrustedResearchSystem ;
        rdfs:range rdfs:Literal ;
+       rdfs:comment "Owner of the TRS." ;
        rdfs:label "owner" .
 
 
@@ -177,6 +195,7 @@
 :publicKey rdf:type owl:DatatypeProperty ;
            rdfs:domain :TrustedResearchSystem ;
            rdfs:range rdfs:Literal ;
+           rdfs:comment "The public key associated with the TRS. ASCII-armored GPG key." ;
            rdfs:label "publicKey" .
 
 
@@ -191,6 +210,7 @@
 :startedAtTime rdf:type owl:DatatypeProperty ;
                rdfs:domain :TrustedResearchPerformance ;
                rdfs:range rdfs:Literal ;
+               rdfs:comment "When the performance began." ;
                rdfs:label "startedAtTime" .
 
 
@@ -198,6 +218,7 @@
 :url rdf:type owl:DatatypeProperty ;
      rdfs:domain :TrustedResearchSystem ;
      rdfs:range rdfs:Literal ;
+     rdfs:comment "URL for the TRS." ;
      rdfs:label "url" .
 
 

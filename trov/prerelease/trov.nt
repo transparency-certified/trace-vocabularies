@@ -31,60 +31,70 @@
 <https://w3id.org/trace/2023/05/trov#accessedArrangement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/trace/2023/05/trov#accessedArrangement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance> .
 <https://w3id.org/trace/2023/05/trov#accessedArrangement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/trace/2023/05/trov#ArtifactArrangement> .
+<https://w3id.org/trace/2023/05/trov#accessedArrangement> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a TRP to an arrangement it read from." .
 <https://w3id.org/trace/2023/05/trov#accessedArrangement> <http://www.w3.org/2000/01/rdf-schema#label> "accessedArrangement" .
 # 
 # https://w3id.org/trace/2023/05/trov#contributedToArrangement
 <https://w3id.org/trace/2023/05/trov#contributedToArrangement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/trace/2023/05/trov#contributedToArrangement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance> .
 <https://w3id.org/trace/2023/05/trov#contributedToArrangement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/trace/2023/05/trov#ArtifactArrangement> .
+<https://w3id.org/trace/2023/05/trov#contributedToArrangement> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a TRP to an arrangement it wrote to." .
 <https://w3id.org/trace/2023/05/trov#contributedToArrangement> <http://www.w3.org/2000/01/rdf-schema#label> "contributedToArrangement" .
 # 
 # https://w3id.org/trace/2023/05/trov#hasArrangement
 <https://w3id.org/trace/2023/05/trov#hasArrangement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/trace/2023/05/trov#hasArrangement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TransparentResearchObject> .
 <https://w3id.org/trace/2023/05/trov#hasArrangement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/trace/2023/05/trov#ArtifactArrangement> .
+<https://w3id.org/trace/2023/05/trov#hasArrangement> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a TRO to an artifact arrangement." .
 <https://w3id.org/trace/2023/05/trov#hasArrangement> <http://www.w3.org/2000/01/rdf-schema#label> "hasArrangement" .
 # 
 # https://w3id.org/trace/2023/05/trov#hasArtifact
 <https://w3id.org/trace/2023/05/trov#hasArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/trace/2023/05/trov#hasArtifact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#ArtifactComposition> .
 <https://w3id.org/trace/2023/05/trov#hasArtifact> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/trace/2023/05/trov#ResearchArtifact> .
+<https://w3id.org/trace/2023/05/trov#hasArtifact> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a composition or locus to an artifact." .
 <https://w3id.org/trace/2023/05/trov#hasArtifact> <http://www.w3.org/2000/01/rdf-schema#label> "hasArtifact" .
 # 
 # https://w3id.org/trace/2023/05/trov#hasCapability
 <https://w3id.org/trace/2023/05/trov#hasCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/trace/2023/05/trov#hasCapability> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchSystem> .
 <https://w3id.org/trace/2023/05/trov#hasCapability> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/trace/2023/05/trov#TRSCapability> .
+<https://w3id.org/trace/2023/05/trov#hasCapability> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a TRS to a capability it declares." .
 <https://w3id.org/trace/2023/05/trov#hasCapability> <http://www.w3.org/2000/01/rdf-schema#label> "hasCapability" .
 # 
 # https://w3id.org/trace/2023/05/trov#hasComposition
 <https://w3id.org/trace/2023/05/trov#hasComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/trace/2023/05/trov#hasComposition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TransparentResearchObject> .
 <https://w3id.org/trace/2023/05/trov#hasComposition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/trace/2023/05/trov#ArtifactComposition> .
+<https://w3id.org/trace/2023/05/trov#hasComposition> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a TRO to its artifact composition." .
 <https://w3id.org/trace/2023/05/trov#hasComposition> <http://www.w3.org/2000/01/rdf-schema#label> "hasComposition" .
 # 
 # https://w3id.org/trace/2023/05/trov#hasFingerprint
 <https://w3id.org/trace/2023/05/trov#hasFingerprint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/trace/2023/05/trov#hasFingerprint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#ArtifactComposition> .
 <https://w3id.org/trace/2023/05/trov#hasFingerprint> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/trace/2023/05/trov#CompositionFingerprint> .
+<https://w3id.org/trace/2023/05/trov#hasFingerprint> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a composition to its fingerprint." .
 <https://w3id.org/trace/2023/05/trov#hasFingerprint> <http://www.w3.org/2000/01/rdf-schema#label> "hasFingerprint" .
 # 
 # https://w3id.org/trace/2023/05/trov#hasLocus
 <https://w3id.org/trace/2023/05/trov#hasLocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/trace/2023/05/trov#hasLocus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#ArtifactArrangement> .
 <https://w3id.org/trace/2023/05/trov#hasLocus> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/trace/2023/05/trov#ArtifactLocus> .
+<https://w3id.org/trace/2023/05/trov#hasLocus> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an arrangement to one of its loci." .
 <https://w3id.org/trace/2023/05/trov#hasLocus> <http://www.w3.org/2000/01/rdf-schema#label> "hasLocus" .
 # 
 # https://w3id.org/trace/2023/05/trov#hasPerformance
 <https://w3id.org/trace/2023/05/trov#hasPerformance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/trace/2023/05/trov#hasPerformance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TransparentResearchObject> .
 <https://w3id.org/trace/2023/05/trov#hasPerformance> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance> .
+<https://w3id.org/trace/2023/05/trov#hasPerformance> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a TRO to a TRP it describes." .
 <https://w3id.org/trace/2023/05/trov#hasPerformance> <http://www.w3.org/2000/01/rdf-schema#label> "hasPerformance" .
 # 
 # https://w3id.org/trace/2023/05/trov#hasPerformanceAttribute
 <https://w3id.org/trace/2023/05/trov#hasPerformanceAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/trace/2023/05/trov#hasPerformanceAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance> .
 <https://w3id.org/trace/2023/05/trov#hasPerformanceAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/trace/2023/05/trov#TRPAttribute> .
+<https://w3id.org/trace/2023/05/trov#hasPerformanceAttribute> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a TRP to a transparency attribute claimed for it." .
 <https://w3id.org/trace/2023/05/trov#hasPerformanceAttribute> <http://www.w3.org/2000/01/rdf-schema#label> "hasPerformanceAttribute" .
 # 
 # https://w3id.org/trace/2023/05/trov#warrantedBy
@@ -98,12 +108,14 @@
 <https://w3id.org/trace/2023/05/trov#wasAssembledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/trace/2023/05/trov#wasAssembledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TransparentResearchObject> .
 <https://w3id.org/trace/2023/05/trov#wasAssembledBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/trace/2023/05/trov#TrustedResearchSystem> .
+<https://w3id.org/trace/2023/05/trov#wasAssembledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a TRO to the TRS that produced it." .
 <https://w3id.org/trace/2023/05/trov#wasAssembledBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasAssembledBy" .
 # 
 # https://w3id.org/trace/2023/05/trov#wasConductedBy
 <https://w3id.org/trace/2023/05/trov#wasConductedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/trace/2023/05/trov#wasConductedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance> .
 <https://w3id.org/trace/2023/05/trov#wasConductedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/trace/2023/05/trov#TrustedResearchSystem> .
+<https://w3id.org/trace/2023/05/trov#wasConductedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a TRP to the TRS that conducted it." .
 <https://w3id.org/trace/2023/05/trov#wasConductedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasConductedBy" .
 # 
 # 
@@ -119,24 +131,28 @@
 <https://w3id.org/trace/2023/05/trov#contact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/trace/2023/05/trov#contact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchSystem> .
 <https://w3id.org/trace/2023/05/trov#contact> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/trace/2023/05/trov#contact> <http://www.w3.org/2000/01/rdf-schema#comment> "Contact email for the TRS." .
 <https://w3id.org/trace/2023/05/trov#contact> <http://www.w3.org/2000/01/rdf-schema#label> "contact" .
 # 
 # https://w3id.org/trace/2023/05/trov#description
 <https://w3id.org/trace/2023/05/trov#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/trace/2023/05/trov#description> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchSystem> .
 <https://w3id.org/trace/2023/05/trov#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/trace/2023/05/trov#description> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the TRS." .
 <https://w3id.org/trace/2023/05/trov#description> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
 # 
 # https://w3id.org/trace/2023/05/trov#endedAtTime
 <https://w3id.org/trace/2023/05/trov#endedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/trace/2023/05/trov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance> .
 <https://w3id.org/trace/2023/05/trov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/trace/2023/05/trov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#comment> "When the performance ended." .
 <https://w3id.org/trace/2023/05/trov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "endedAtTime" .
 # 
 # https://w3id.org/trace/2023/05/trov#hasLocation
 <https://w3id.org/trace/2023/05/trov#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/trace/2023/05/trov#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#ArtifactLocus> .
 <https://w3id.org/trace/2023/05/trov#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/trace/2023/05/trov#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Resource path for an artifact within an arrangement." .
 <https://w3id.org/trace/2023/05/trov#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "hasLocation" .
 # 
 # https://w3id.org/trace/2023/05/trov#mimeType
@@ -150,18 +166,21 @@
 <https://w3id.org/trace/2023/05/trov#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/trace/2023/05/trov#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchSystem> .
 <https://w3id.org/trace/2023/05/trov#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/trace/2023/05/trov#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Short name for the TRS." .
 <https://w3id.org/trace/2023/05/trov#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
 # 
 # https://w3id.org/trace/2023/05/trov#owner
 <https://w3id.org/trace/2023/05/trov#owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/trace/2023/05/trov#owner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchSystem> .
 <https://w3id.org/trace/2023/05/trov#owner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/trace/2023/05/trov#owner> <http://www.w3.org/2000/01/rdf-schema#comment> "Owner of the TRS." .
 <https://w3id.org/trace/2023/05/trov#owner> <http://www.w3.org/2000/01/rdf-schema#label> "owner" .
 # 
 # https://w3id.org/trace/2023/05/trov#publicKey
 <https://w3id.org/trace/2023/05/trov#publicKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/trace/2023/05/trov#publicKey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchSystem> .
 <https://w3id.org/trace/2023/05/trov#publicKey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/trace/2023/05/trov#publicKey> <http://www.w3.org/2000/01/rdf-schema#comment> "The public key associated with the TRS. ASCII-armored GPG key." .
 <https://w3id.org/trace/2023/05/trov#publicKey> <http://www.w3.org/2000/01/rdf-schema#label> "publicKey" .
 # 
 # https://w3id.org/trace/2023/05/trov#sha256
@@ -174,12 +193,14 @@
 <https://w3id.org/trace/2023/05/trov#startedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/trace/2023/05/trov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance> .
 <https://w3id.org/trace/2023/05/trov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/trace/2023/05/trov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#comment> "When the performance began." .
 <https://w3id.org/trace/2023/05/trov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "startedAtTime" .
 # 
 # https://w3id.org/trace/2023/05/trov#url
 <https://w3id.org/trace/2023/05/trov#url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/trace/2023/05/trov#url> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/trace/2023/05/trov#TrustedResearchSystem> .
 <https://w3id.org/trace/2023/05/trov#url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/trace/2023/05/trov#url> <http://www.w3.org/2000/01/rdf-schema#comment> "URL for the TRS." .
 <https://w3id.org/trace/2023/05/trov#url> <http://www.w3.org/2000/01/rdf-schema#label> "url" .
 # 
 # 

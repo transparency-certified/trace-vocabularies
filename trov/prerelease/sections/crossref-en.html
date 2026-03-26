@@ -8,10 +8,6 @@ This section provides details for each class and property defined by Transparent
             title="https://w3id.org/trace/2023/05/trov#ArtifactArrangement">ArtifactArrangement</a>
       </li>
       <li>
-         <a href="#ArtifactCollection"
-            title="https://w3id.org/trace/2023/05/trov#ArtifactCollection">ArtifactCollection</a>
-      </li>
-      <li>
          <a href="#ArtifactComposition"
             title="https://w3id.org/trace/2023/05/trov#ArtifactComposition">ArtifactComposition</a>
       </li>
@@ -20,76 +16,23 @@ This section provides details for each class and property defined by Transparent
             title="https://w3id.org/trace/2023/05/trov#ArtifactLocus">ArtifactLocus</a>
       </li>
       <li>
-         <a href="#CanExcludeInputs"
-            title="https://w3id.org/trace/2023/05/trov#CanExcludeInputs">CanExcludeInputs</a>
-      </li>
-      <li>
-         <a href="#CanExcludeOutputs"
-            title="https://w3id.org/trace/2023/05/trov#CanExcludeOutputs">CanExcludeOutputs</a>
-      </li>
-      <li>
-         <a href="#CanIsolateEnvironment"
-            title="https://w3id.org/trace/2023/05/trov#CanIsolateEnvironment">CanIsolateEnvironment</a>
-      </li>
-      <li>
-         <a href="#CanPreventAuthorIntervention"
-            title="https://w3id.org/trace/2023/05/trov#CanPreventAuthorIntervention">CanPreventAuthorIntervention</a>
-      </li>
-      <li>
-         <a href="#CanProvideInternetIsolation"
-            title="https://w3id.org/trace/2023/05/trov#CanProvideInternetIsolation">CanProvideInternetIsolation</a>
-      </li>
-      <li>
          <a href="#CompositionFingerprint"
             title="https://w3id.org/trace/2023/05/trov#CompositionFingerprint">CompositionFingerprint</a>
-      </li>
-      <li>
-         <a href="#EnforcesEnvironmentIsolation"
-            title="https://w3id.org/trace/2023/05/trov#EnforcesEnvironmentIsolation">EnforcesEnvironmentIsolation</a>
-      </li>
-      <li>
-         <a href="#EnforcesInternetIsolation"
-            title="https://w3id.org/trace/2023/05/trov#EnforcesInternetIsolation">EnforcesInternetIsolation</a>
-      </li>
-      <li>
-         <a href="#EnforcesNoninteractiveExecution"
-            title="https://w3id.org/trace/2023/05/trov#EnforcesNoninteractiveExecution">EnforcesNoninteractiveExecution</a>
-      </li>
-      <li>
-         <a href="#IncludesAllInputData"
-            title="https://w3id.org/trace/2023/05/trov#IncludesAllInputData">IncludesAllInputData</a>
       </li>
       <li>
          <a href="#ResearchArtifact"
             title="https://w3id.org/trace/2023/05/trov#ResearchArtifact">ResearchArtifact</a>
       </li>
       <li>
-         <a href="#TimeStampingAuthority"
-            title="https://w3id.org/trace/2023/05/trov#TimeStampingAuthority">TimeStampingAuthority</a>
-      </li>
-      <li>
          <a href="#TransparentResearchObject"
             title="https://w3id.org/trace/2023/05/trov#TransparentResearchObject">TransparentResearchObject</a>
       </li>
       <li>
-         <a href="#TREAttribute" title="https://w3id.org/trace/2023/05/trov#TREAttribute">TREAttribute</a>
-      </li>
-      <li>
-         <a href="#TROAttribute" title="https://w3id.org/trace/2023/05/trov#TROAttribute">TROAttribute</a>
-      </li>
-      <li>
-         <a href="#TRSAttribute" title="https://w3id.org/trace/2023/05/trov#TRSAttribute">TRSAttribute</a>
+         <a href="#TRPAttribute" title="https://w3id.org/trace/2023/05/trov#TRPAttribute">TRPAttribute</a>
       </li>
       <li>
          <a href="#TRSCapability"
             title="https://w3id.org/trace/2023/05/trov#TRSCapability">TRSCapability</a>
-      </li>
-      <li>
-         <a href="#TRSPolicy" title="https://w3id.org/trace/2023/05/trov#TRSPolicy">TRSPolicy</a>
-      </li>
-      <li>
-         <a href="#TrustedResearchElement"
-            title="https://w3id.org/trace/2023/05/trov#TrustedResearchElement">TrustedResearchElement</a>
       </li>
       <li>
          <a href="#TrustedResearchPerformance"
@@ -108,7 +51,7 @@ This section provides details for each class and property defined by Transparent
       <p>
          <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#ArtifactArrangement</p>
       <div class="comment">
-         <span class="markdown">A set of loci describing the location of one or more artifacts</span>
+         <span class="markdown">A named collection of artifact locations capturing where artifacts were at a point in a workflow.</span>
       </div>
       <dl class="description">
          <dt>is in domain of</dt>
@@ -118,34 +61,12 @@ This section provides details for each class and property defined by Transparent
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasArrangement"
+            <a href="#accessedArrangement"
+               title="https://w3id.org/trace/2023/05/trov#accessedArrangement">accessedArrangement</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#contributedToArrangement"
+               title="https://w3id.org/trace/2023/05/trov#contributedToArrangement">contributedToArrangement</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasArrangement"
                title="https://w3id.org/trace/2023/05/trov#hasArrangement">hasArrangement</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="ArtifactCollection">
-      <h3>ArtifactCollection<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#ArtifactCollection</p>
-      <div class="comment">
-         <span class="markdown">Base class for collections of one or more artifacts.</span>
-      </div>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#ArtifactComposition"
-               title="https://w3id.org/trace/2023/05/trov#ArtifactComposition">ArtifactComposition</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ArtifactLocus"
-               title="https://w3id.org/trace/2023/05/trov#ArtifactLocus">ArtifactLocus</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasArtifact" title="https://w3id.org/trace/2023/05/trov#hasArtifact">hasArtifact</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -158,18 +79,13 @@ This section provides details for each class and property defined by Transparent
       <p>
          <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#ArtifactComposition</p>
       <div class="comment">
-         <span class="markdown">A set of artifacts described by a TRO.</span>
+         <span class="markdown">The set of all digital artifacts described by a TRO.</span>
       </div>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#ArtifactCollection"
-               title="https://w3id.org/trace/2023/05/trov#ArtifactCollection">ArtifactCollection</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasFingerprint"
+            <a href="#hasArtifact" title="https://w3id.org/trace/2023/05/trov#hasArtifact">hasArtifact</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFingerprint"
                title="https://w3id.org/trace/2023/05/trov#hasFingerprint">hasFingerprint</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -189,122 +105,18 @@ This section provides details for each class and property defined by Transparent
       <p>
          <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#ArtifactLocus</p>
       <div class="comment">
-         <span class="markdown">The location of a specific artifact.</span>
+         <span class="markdown">The location of a specific artifact within an arrangement.</span>
       </div>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#ArtifactCollection"
-               title="https://w3id.org/trace/2023/05/trov#ArtifactCollection">ArtifactCollection</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasLocation" title="https://w3id.org/trace/2023/05/trov#hasLocation">hasLocus</a>
+            <a href="#hasLocation" title="https://w3id.org/trace/2023/05/trov#hasLocation">hasLocation</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasLocus" title="https://w3id.org/trace/2023/05/trov#hasLocus">hasLocus</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="CanExcludeInputs">
-      <h3>CanExcludeInputs<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#CanExcludeInputs</p>
-      <div class="comment">
-         <span class="markdown">The capability to exclude input data from a TRO created during a TRP.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TRSCapability"
-               title="https://w3id.org/trace/2023/05/trov#TRSCapability">TRSCapability</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="CanExcludeOutputs">
-      <h3>CanExcludeOutputs<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#CanExcludeOutputs</p>
-      <div class="comment">
-         <span class="markdown">The capability to exclude output data from a TRO created during a TRP.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TRSCapability"
-               title="https://w3id.org/trace/2023/05/trov#TRSCapability">TRSCapability</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="CanIsolateEnvironment">
-      <h3>CanIsolateEnvironment<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#CanIsolateEnvironment</p>
-      <div class="comment">
-         <span class="markdown">The capability to prevent access to the host environment during a TRP.
-                    Usually indicates that the TRP is executed in a sandbox or container.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TRSCapability"
-               title="https://w3id.org/trace/2023/05/trov#TRSCapability">TRSCapability</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="CanPreventAuthorIntervention">
-      <h3>CanPreventAuthorIntervention<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#CanPreventAuthorIntervention</p>
-      <div class="comment">
-         <span class="markdown">The capability to prevent author intervention during a TRP.
-                    Usually indicates that the TRP is fully automated or performed by
-                    an independent agent.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TRSCapability"
-               title="https://w3id.org/trace/2023/05/trov#TRSCapability">TRSCapability</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="CanProvideInternetIsolation">
-      <h3>CanProvideInternetIsolation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#CanProvideInternetIsolation</p>
-      <div class="comment">
-         <span class="markdown">The capability to prevent Internet access during a TRP.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TRSCapability"
-               title="https://w3id.org/trace/2023/05/trov#TRSCapability">TRSCapability</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -316,7 +128,7 @@ This section provides details for each class and property defined by Transparent
       <p>
          <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#CompositionFingerprint</p>
       <div class="comment">
-         <span class="markdown">Unique fingerprint of a particular artifact composition</span>
+         <span class="markdown">A hash computed over the sorted hashes of all artifacts in a composition.</span>
       </div>
       <dl class="description">
          <dt>is in range of</dt>
@@ -324,78 +136,6 @@ This section provides details for each class and property defined by Transparent
             <a href="#hasFingerprint"
                title="https://w3id.org/trace/2023/05/trov#hasFingerprint">hasFingerprint</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="EnforcesEnvironmentIsolation">
-      <h3>EnforcesEnvironmentIsolation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#EnforcesEnvironmentIsolation</p>
-      <div class="comment">
-         <span class="markdown">The policy of always isolating the host environment during a TRP.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TRSPolicy" title="https://w3id.org/trace/2023/05/trov#TRSPolicy">TRSPolicy</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="EnforcesInternetIsolation">
-      <h3>EnforcesInternetIsolation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#EnforcesInternetIsolation</p>
-      <div class="comment">
-         <span class="markdown">The policy of always preventing Internet access during a TRP.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TRSPolicy" title="https://w3id.org/trace/2023/05/trov#TRSPolicy">TRSPolicy</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="EnforcesNoninteractiveExecution">
-      <h3>EnforcesNoninteractiveExecution<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#EnforcesNoninteractiveExecution</p>
-      <div class="comment">
-         <span class="markdown">The policy of always executing a TRP in a non-interactive mode.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TRSPolicy" title="https://w3id.org/trace/2023/05/trov#TRSPolicy">TRSPolicy</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="IncludesAllInputData">
-      <h3>IncludesAllInputData<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#IncludesAllInputData</p>
-      <div class="comment">
-         <span class="markdown">TRO composition includes all input data employed in creating the TRO.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TROAttribute" title="https://w3id.org/trace/2023/05/trov#TROAttribute">TROAttribute</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -407,37 +147,17 @@ This section provides details for each class and property defined by Transparent
       <p>
          <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#ResearchArtifact</p>
       <div class="comment">
-         <span class="markdown">A research artifact described by a TRO.</span>
+         <span class="markdown">A digital object identified by a content hash.</span>
       </div>
       <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#mimeType" title="https://w3id.org/trace/2023/05/trov#mimeType">mimeType</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasArtifact" title="https://w3id.org/trace/2023/05/trov#hasArtifact">hasArtifact</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="TimeStampingAuthority">
-      <h3>TimeStampingAuthority<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#TimeStampingAuthority</p>
-      <div class="comment">
-         <span class="markdown">A timestamping authority trusted by a TRS.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TrustedResearchElement"
-               title="https://w3id.org/trace/2023/05/trov#TrustedResearchElement">TrustedResearchElement</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#wasTimestampedBy"
-               title="https://w3id.org/trace/2023/05/trov#wasTimestampedBy">wasTimestampedBy</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -450,93 +170,54 @@ This section provides details for each class and property defined by Transparent
       <p>
          <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#TransparentResearchObject</p>
       <div class="comment">
-         <span class="markdown">A set of research artifacts produced by a TRP and signed by the performing TRS.</span>
+         <span class="markdown">A set of research artifacts produced by one or more TRPs and signed by the assembling TRS.</span>
       </div>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TrustedResearchElement"
-               title="https://w3id.org/trace/2023/05/trov#TrustedResearchElement">TrustedResearchElement</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasArrangement"
                title="https://w3id.org/trace/2023/05/trov#hasArrangement">hasArrangement</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasComposition"
+            <sup class="type-op" title="object property">op</sup>, <a href="https://w3id.org/trace/2023/05/trov#hasAttribute"
+               target="_blank"
+               title="https://w3id.org/trace/2023/05/trov#hasAttribute">hasAttribute</a>, <a href="#hasComposition"
                title="https://w3id.org/trace/2023/05/trov#hasComposition">hasComposition</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPerformance"
+               title="https://w3id.org/trace/2023/05/trov#hasPerformance">hasPerformance</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#wasAssembledBy"
                title="https://w3id.org/trace/2023/05/trov#wasAssembledBy">wasAssembledBy</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#wasTimestampedBy"
-               title="https://w3id.org/trace/2023/05/trov#wasTimestampedBy">wasTimestampedBy</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="TREAttribute">
-      <h3>TREAttribute<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="TRPAttribute">
+      <h3>TRPAttribute<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#TREAttribute</p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#TRPAttribute</p>
       <div class="comment">
-         <span class="markdown">An attribute of a TRS, TRP, or TRO.</span>
+         <span class="markdown">A transparency attribute of a TRP, warranted by a TRS capability.</span>
       </div>
       <dl class="description">
-         <dt>has sub-classes</dt>
+         <dt>is in domain of</dt>
          <dd>
-            <a href="#TROAttribute" title="https://w3id.org/trace/2023/05/trov#TROAttribute">TROAttribute</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TRSAttribute" title="https://w3id.org/trace/2023/05/trov#TRSAttribute">TRSAttribute</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#warrantedBy" title="https://w3id.org/trace/2023/05/trov#warrantedBy">warrantedBy</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
-      </dl>
-   </div>
-   <div class="entity" id="TROAttribute">
-      <h3>TROAttribute<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#TROAttribute</p>
-      <div class="comment">
-         <span class="markdown">An attribute of a particular TRO.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
+         <dt>is in range of</dt>
          <dd>
-            <a href="#TREAttribute" title="https://w3id.org/trace/2023/05/trov#TREAttribute">TREAttribute</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#hasPerformanceAttribute"
+               title="https://w3id.org/trace/2023/05/trov#hasPerformanceAttribute">hasPerformanceAttribute</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
-         <dt>has sub-classes</dt>
+         <dt>has members</dt>
          <dd>
-            <a href="#IncludesAllInputData"
-               title="https://w3id.org/trace/2023/05/trov#IncludesAllInputData">IncludesAllInputData</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="TRSAttribute">
-      <h3>TRSAttribute<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#TRSAttribute</p>
-      <div class="comment">
-         <span class="markdown">An attribute of a TRS.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TREAttribute" title="https://w3id.org/trace/2023/05/trov#TREAttribute">TREAttribute</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#TRSCapability"
-               title="https://w3id.org/trace/2023/05/trov#TRSCapability">TRSCapability</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#InternetAccessRecording"
+               title="https://w3id.org/trace/2023/05/trov#InternetAccessRecording">InternetAccessRecording</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#InternetIsolation"
+               title="https://w3id.org/trace/2023/05/trov#InternetIsolation">InternetIsolation</a>
+            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
@@ -551,79 +232,19 @@ This section provides details for each class and property defined by Transparent
          <span class="markdown">A capability of a TRS.</span>
       </div>
       <dl class="description">
-         <dt>has super-classes</dt>
+         <dt>is in range of</dt>
          <dd>
-            <a href="#TRSAttribute" title="https://w3id.org/trace/2023/05/trov#TRSAttribute">TRSAttribute</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#hasCapability" title="https://w3id.org/trace/2023/05/trov#hasCapability">hasCapability</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#warrantedBy" title="https://w3id.org/trace/2023/05/trov#warrantedBy">warrantedBy</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
-         <dt>has sub-classes</dt>
+         <dt>has members</dt>
          <dd>
-            <a href="#CanExcludeInputs"
-               title="https://w3id.org/trace/2023/05/trov#CanExcludeInputs">CanExcludeInputs</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#CanExcludeOutputs"
-               title="https://w3id.org/trace/2023/05/trov#CanExcludeOutputs">CanExcludeOutputs</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#CanIsolateEnvironment"
-               title="https://w3id.org/trace/2023/05/trov#CanIsolateEnvironment">CanIsolateEnvironment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#CanPreventAuthorIntervention"
-               title="https://w3id.org/trace/2023/05/trov#CanPreventAuthorIntervention">CanPreventAuthorIntervention</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#CanProvideInternetIsolation"
+            <a href="#CanProvideInternetIsolation"
                title="https://w3id.org/trace/2023/05/trov#CanProvideInternetIsolation">CanProvideInternetIsolation</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TRSPolicy" title="https://w3id.org/trace/2023/05/trov#TRSPolicy">TRSPolicy</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="TRSPolicy">
-      <h3>TRSPolicy<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#TRSPolicy</p>
-      <div class="comment">
-         <span class="markdown">A policy always enforced by a particular TRS.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TRSCapability"
-               title="https://w3id.org/trace/2023/05/trov#TRSCapability">TRSCapability</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#EnforcesEnvironmentIsolation"
-               title="https://w3id.org/trace/2023/05/trov#EnforcesEnvironmentIsolation">EnforcesEnvironmentIsolation</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#EnforcesInternetIsolation"
-               title="https://w3id.org/trace/2023/05/trov#EnforcesInternetIsolation">EnforcesInternetIsolation</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#EnforcesNoninteractiveExecution"
-               title="https://w3id.org/trace/2023/05/trov#EnforcesNoninteractiveExecution">EnforcesNoninteractiveExecution</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="TrustedResearchElement">
-      <h3>TrustedResearchElement<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#TrustedResearchElement</p>
-      <div class="comment">
-         <span class="markdown">Common base class for TRSs, TRPs, and TROs.</span>
-      </div>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#TimeStampingAuthority"
-               title="https://w3id.org/trace/2023/05/trov#TimeStampingAuthority">TimeStampingAuthority</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TransparentResearchObject"
-               title="https://w3id.org/trace/2023/05/trov#TransparentResearchObject">TransparentResearchObject</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TrustedResearchPerformance"
-               title="https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance">TrustedResearchPerformance</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TrustedResearchSystem"
-               title="https://w3id.org/trace/2023/05/trov#TrustedResearchSystem">TrustedResearchSystem</a>
-            <sup class="type-c" title="class">c</sup>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#CanRecordInternetAccess"
+               title="https://w3id.org/trace/2023/05/trov#CanRecordInternetAccess">CanRecordInternetAccess</a>
+            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
@@ -635,14 +256,29 @@ This section provides details for each class and property defined by Transparent
       <p>
          <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance</p>
       <div class="comment">
-         <span class="markdown">A set of research operations performed by a TRS.</span>
+         <span class="markdown">A supervised unit of work conducted by a TRS.</span>
       </div>
       <dl class="description">
-         <dt>has super-classes</dt>
+         <dt>is in domain of</dt>
          <dd>
-            <a href="#TrustedResearchElement"
-               title="https://w3id.org/trace/2023/05/trov#TrustedResearchElement">TrustedResearchElement</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#accessedArrangement"
+               title="https://w3id.org/trace/2023/05/trov#accessedArrangement">accessedArrangement</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#contributedToArrangement"
+               title="https://w3id.org/trace/2023/05/trov#contributedToArrangement">contributedToArrangement</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#endedAtTime" title="https://w3id.org/trace/2023/05/trov#endedAtTime">endedAtTime</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPerformanceAttribute"
+               title="https://w3id.org/trace/2023/05/trov#hasPerformanceAttribute">hasPerformanceAttribute</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#startedAtTime"
+               title="https://w3id.org/trace/2023/05/trov#startedAtTime">startedAtTime</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#wasConductedBy"
+               title="https://w3id.org/trace/2023/05/trov#wasConductedBy">wasConductedBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasPerformance"
+               title="https://w3id.org/trace/2023/05/trov#hasPerformance">hasPerformance</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -654,19 +290,26 @@ This section provides details for each class and property defined by Transparent
       <p>
          <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#TrustedResearchSystem</p>
       <div class="comment">
-         <span class="markdown">A system certified to perform TRPs and assemble TROs.</span>
+         <span class="markdown">A system that performs TRPs and assembles TROs.</span>
       </div>
       <dl class="description">
-         <dt>has super-classes</dt>
+         <dt>is in domain of</dt>
          <dd>
-            <a href="#TrustedResearchElement"
-               title="https://w3id.org/trace/2023/05/trov#TrustedResearchElement">TrustedResearchElement</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#contact" title="https://w3id.org/trace/2023/05/trov#contact">contact</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#description" title="https://w3id.org/trace/2023/05/trov#description">description</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCapability" title="https://w3id.org/trace/2023/05/trov#hasCapability">hasCapability</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#name" title="https://w3id.org/trace/2023/05/trov#name">name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#owner" title="https://w3id.org/trace/2023/05/trov#owner">owner</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#publicKey" title="https://w3id.org/trace/2023/05/trov#publicKey">publicKey</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#url" title="https://w3id.org/trace/2023/05/trov#url">url</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#wasAssembledBy"
                title="https://w3id.org/trace/2023/05/trov#wasAssembledBy">wasAssembledBy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#wasConductedBy"
+               title="https://w3id.org/trace/2023/05/trov#wasConductedBy">wasConductedBy</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -675,11 +318,22 @@ This section provides details for each class and property defined by Transparent
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
+         <a href="#accessedArrangement"
+            title="https://w3id.org/trace/2023/05/trov#accessedArrangement">accessedArrangement</a>
+      </li>
+      <li>
+         <a href="#contributedToArrangement"
+            title="https://w3id.org/trace/2023/05/trov#contributedToArrangement">contributedToArrangement</a>
+      </li>
+      <li>
          <a href="#hasArrangement"
             title="https://w3id.org/trace/2023/05/trov#hasArrangement">hasArrangement</a>
       </li>
       <li>
          <a href="#hasArtifact" title="https://w3id.org/trace/2023/05/trov#hasArtifact">hasArtifact</a>
+      </li>
+      <li>
+         <a href="#hasCapability" title="https://w3id.org/trace/2023/05/trov#hasCapability">hasCapability</a>
       </li>
       <li>
          <a href="#hasComposition"
@@ -693,14 +347,73 @@ This section provides details for each class and property defined by Transparent
          <a href="#hasLocus" title="https://w3id.org/trace/2023/05/trov#hasLocus">hasLocus</a>
       </li>
       <li>
+         <a href="#hasPerformance"
+            title="https://w3id.org/trace/2023/05/trov#hasPerformance">hasPerformance</a>
+      </li>
+      <li>
+         <a href="#hasPerformanceAttribute"
+            title="https://w3id.org/trace/2023/05/trov#hasPerformanceAttribute">hasPerformanceAttribute</a>
+      </li>
+      <li>
+         <a href="#warrantedBy" title="https://w3id.org/trace/2023/05/trov#warrantedBy">warrantedBy</a>
+      </li>
+      <li>
          <a href="#wasAssembledBy"
             title="https://w3id.org/trace/2023/05/trov#wasAssembledBy">wasAssembledBy</a>
       </li>
       <li>
-         <a href="#wasTimestampedBy"
-            title="https://w3id.org/trace/2023/05/trov#wasTimestampedBy">wasTimestampedBy</a>
+         <a href="#wasConductedBy"
+            title="https://w3id.org/trace/2023/05/trov#wasConductedBy">wasConductedBy</a>
       </li>
    </ul>
+   <div class="entity" id="accessedArrangement">
+      <h3>accessedArrangement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#accessedArrangement</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrustedResearchPerformance"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance">TrustedResearchPerformance</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ArtifactArrangement"
+                  title="https://w3id.org/trace/2023/05/trov#ArtifactArrangement">ArtifactArrangement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contributedToArrangement">
+      <h3>contributedToArrangement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#contributedToArrangement</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrustedResearchPerformance"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance">TrustedResearchPerformance</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ArtifactArrangement"
+                  title="https://w3id.org/trace/2023/05/trov#ArtifactArrangement">ArtifactArrangement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasArrangement">
       <h3>hasArrangement<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -736,14 +449,38 @@ This section provides details for each class and property defined by Transparent
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#ArtifactCollection"
-                  title="https://w3id.org/trace/2023/05/trov#ArtifactCollection">ArtifactCollection</a>
+               <a href="#ArtifactComposition"
+                  title="https://w3id.org/trace/2023/05/trov#ArtifactComposition">ArtifactComposition</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#ResearchArtifact"
                   title="https://w3id.org/trace/2023/05/trov#ResearchArtifact">ResearchArtifact</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCapability">
+      <h3>hasCapability<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#hasCapability</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrustedResearchSystem"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchSystem">TrustedResearchSystem</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TRSCapability"
+                  title="https://w3id.org/trace/2023/05/trov#TRSCapability">TRSCapability</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -821,6 +558,79 @@ This section provides details for each class and property defined by Transparent
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasPerformance">
+      <h3>hasPerformance<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#hasPerformance</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TransparentResearchObject"
+                  title="https://w3id.org/trace/2023/05/trov#TransparentResearchObject">TransparentResearchObject</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TrustedResearchPerformance"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance">TrustedResearchPerformance</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPerformanceAttribute">
+      <h3>hasPerformanceAttribute<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#hasPerformanceAttribute</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrustedResearchPerformance"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance">TrustedResearchPerformance</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TRPAttribute" title="https://w3id.org/trace/2023/05/trov#TRPAttribute">TRPAttribute</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="warrantedBy">
+      <h3>warrantedBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#warrantedBy</p>
+      <div class="comment">
+         <span class="markdown">Links a transparency attribute to the TRS capability that warrants it.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TRPAttribute" title="https://w3id.org/trace/2023/05/trov#TRPAttribute">TRPAttribute</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TRSCapability"
+                  title="https://w3id.org/trace/2023/05/trov#TRSCapability">TRSCapability</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="wasAssembledBy">
       <h3>wasAssembledBy<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -845,25 +655,25 @@ This section provides details for each class and property defined by Transparent
          </dl>
       </div>
    </div>
-   <div class="entity" id="wasTimestampedBy">
-      <h3>wasTimestampedBy<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="wasConductedBy">
+      <h3>wasConductedBy<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#wasTimestampedBy</p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#wasConductedBy</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#TransparentResearchObject"
-                  title="https://w3id.org/trace/2023/05/trov#TransparentResearchObject">TransparentResearchObject</a>
+               <a href="#TrustedResearchPerformance"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance">TrustedResearchPerformance</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#TimeStampingAuthority"
-                  title="https://w3id.org/trace/2023/05/trov#TimeStampingAuthority">TimeStampingAuthority</a>
+               <a href="#TrustedResearchSystem"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchSystem">TrustedResearchSystem</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -873,11 +683,114 @@ This section provides details for each class and property defined by Transparent
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#hasLocation" title="https://w3id.org/trace/2023/05/trov#hasLocation">hasLocus</a>
+         <a href="#contact" title="https://w3id.org/trace/2023/05/trov#contact">contact</a>
+      </li>
+      <li>
+         <a href="#description" title="https://w3id.org/trace/2023/05/trov#description">description</a>
+      </li>
+      <li>
+         <a href="#endedAtTime" title="https://w3id.org/trace/2023/05/trov#endedAtTime">endedAtTime</a>
+      </li>
+      <li>
+         <a href="#hasLocation" title="https://w3id.org/trace/2023/05/trov#hasLocation">hasLocation</a>
+      </li>
+      <li>
+         <a href="#mimeType" title="https://w3id.org/trace/2023/05/trov#mimeType">mimeType</a>
+      </li>
+      <li>
+         <a href="#name" title="https://w3id.org/trace/2023/05/trov#name">name</a>
+      </li>
+      <li>
+         <a href="#owner" title="https://w3id.org/trace/2023/05/trov#owner">owner</a>
+      </li>
+      <li>
+         <a href="#publicKey" title="https://w3id.org/trace/2023/05/trov#publicKey">publicKey</a>
+      </li>
+      <li>
+         <a href="#sha256" title="https://w3id.org/trace/2023/05/trov#sha256">sha256</a>
+      </li>
+      <li>
+         <a href="#startedAtTime"
+            title="https://w3id.org/trace/2023/05/trov#startedAtTime">startedAtTime</a>
+      </li>
+      <li>
+         <a href="#url" title="https://w3id.org/trace/2023/05/trov#url">url</a>
       </li>
    </ul>
+   <div class="entity" id="contact">
+      <h3>contact<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#contact</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrustedResearchSystem"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchSystem">TrustedResearchSystem</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="description">
+      <h3>description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#description</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrustedResearchSystem"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchSystem">TrustedResearchSystem</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="endedAtTime">
+      <h3>endedAtTime<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#endedAtTime</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrustedResearchPerformance"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance">TrustedResearchPerformance</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasLocation">
-      <h3>hasLocus<sup class="type-dp" title="data property">dp</sup>
+      <h3>hasLocation<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -900,11 +813,274 @@ This section provides details for each class and property defined by Transparent
          </dl>
       </div>
    </div>
+   <div class="entity" id="mimeType">
+      <h3>mimeType<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#mimeType</p>
+      <div class="comment">
+         <span class="markdown">The MIME type of an artifact.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ResearchArtifact"
+                  title="https://w3id.org/trace/2023/05/trov#ResearchArtifact">ResearchArtifact</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="name">
+      <h3>name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#name</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrustedResearchSystem"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchSystem">TrustedResearchSystem</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="owner">
+      <h3>owner<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#owner</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrustedResearchSystem"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchSystem">TrustedResearchSystem</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="publicKey">
+      <h3>publicKey<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#publicKey</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrustedResearchSystem"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchSystem">TrustedResearchSystem</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="sha256">
+      <h3>sha256<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#sha256</p>
+      <div class="comment">
+         <span class="markdown">SHA-256 hash of an artifact's contents or a composition's sorted artifact hashes.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="startedAtTime">
+      <h3>startedAtTime<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#startedAtTime</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrustedResearchPerformance"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance">TrustedResearchPerformance</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="url">
+      <h3>url<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#url</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrustedResearchSystem"
+                  title="https://w3id.org/trace/2023/05/trov#TrustedResearchSystem">TrustedResearchSystem</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#CanProvideInternetIsolation"
+            title="https://w3id.org/trace/2023/05/trov#CanProvideInternetIsolation">CanProvideInternetIsolation</a>
+      </li>
+      <li>
+         <a href="#CanRecordInternetAccess"
+            title="https://w3id.org/trace/2023/05/trov#CanRecordInternetAccess">CanRecordInternetAccess</a>
+      </li>
+      <li>
+         <a href="#InternetAccessRecording"
+            title="https://w3id.org/trace/2023/05/trov#InternetAccessRecording">InternetAccessRecording</a>
+      </li>
+      <li>
+         <a href="#InternetIsolation"
+            title="https://w3id.org/trace/2023/05/trov#InternetIsolation">InternetIsolation</a>
+      </li>
+   </ul>
+   <div class="entity" id="CanProvideInternetIsolation">
+      <h3>CanProvideInternetIsolation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#CanProvideInternetIsolation</p>
+      <div class="comment">
+         <span class="markdown">The TRS can isolate computations from network access during a TRP.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TRSCapability"
+               title="https://w3id.org/trace/2023/05/trov#TRSCapability">TRSCapability</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CanRecordInternetAccess">
+      <h3>CanRecordInternetAccess<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#CanRecordInternetAccess</p>
+      <div class="comment">
+         <span class="markdown">The TRS can record all network accesses made during a TRP.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TRSCapability"
+               title="https://w3id.org/trace/2023/05/trov#TRSCapability">TRSCapability</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InternetAccessRecording">
+      <h3>InternetAccessRecording<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#InternetAccessRecording</p>
+      <div class="comment">
+         <span class="markdown">All network accesses during the TRP were recorded.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TRPAttribute" title="https://w3id.org/trace/2023/05/trov#TRPAttribute">TRPAttribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InternetIsolation">
+      <h3>InternetIsolation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/trace/2023/05/trov#InternetIsolation</p>
+      <div class="comment">
+         <span class="markdown">The TRP was conducted without network access.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TRPAttribute" title="https://w3id.org/trace/2023/05/trov#TRPAttribute">TRPAttribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>

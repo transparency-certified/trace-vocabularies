@@ -3,7 +3,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This document defines vocabulary for describing a Transparent Research Object (TRO)"
+    "@value" : "Pre-release vocabulary for describing Transparent Research Objects (TROs). This namespace is retired; see https://w3id.org/trace/trov/0.1 for the current version."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -19,202 +19,103 @@
   "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactArrangement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A set of loci describing the location of one or more artifacts"
+    "@value" : "A named collection of artifact locations capturing where artifacts were at a point in a workflow."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ArtifactArrangement"
   } ]
 }, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactCollection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Base class for collections of one or more artifacts."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ArtifactCollection"
-  } ]
-}, {
   "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactComposition",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A set of artifacts described by a TRO."
+    "@value" : "The set of all digital artifacts described by a TRO."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ArtifactComposition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactCollection"
   } ]
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactLocus",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The location of a specific artifact."
+    "@value" : "The location of a specific artifact within an arrangement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ArtifactLocus"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactCollection"
-  } ]
-}, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#CanExcludeInputs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The capability to exclude input data from a TRO created during a TRP."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "CanExcludeInputs"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TRSCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#CanExcludeOutputs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The capability to exclude output data from a TRO created during a TRP."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "CanExcludeOutputs"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TRSCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#CanIsolateEnvironment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The capability to prevent access to the host environment during a TRP.\n                    Usually indicates that the TRP is executed in a sandbox or container."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "CanIsolateEnvironment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TRSCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#CanPreventAuthorIntervention",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The capability to prevent author intervention during a TRP.\n                    Usually indicates that the TRP is fully automated or performed by\n                    an independent agent."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "CanPreventAuthorIntervention"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TRSCapability"
   } ]
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#CanProvideInternetIsolation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TRSCapability"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The capability to prevent Internet access during a TRP."
+    "@value" : "The TRS can isolate computations from network access during a TRP."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "CanProvideInternetIsolation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#CanRecordInternetAccess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#TRSCapability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The TRS can record all network accesses made during a TRP."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CanRecordInternetAccess"
   } ]
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#CompositionFingerprint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Unique fingerprint of a particular artifact composition"
+    "@value" : "A hash computed over the sorted hashes of all artifacts in a composition."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "CompositionFingerprint"
   } ]
 }, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#EnforcesEnvironmentIsolation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "https://w3id.org/trace/2023/05/trov#InternetAccessRecording",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TRPAttribute"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The policy of always isolating the host environment during a TRP."
+    "@value" : "All network accesses during the TRP were recorded."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "EnforcesEnvironmentIsolation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TRSPolicy"
+    "@value" : "InternetAccessRecording"
   } ]
 }, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#EnforcesInternetIsolation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "https://w3id.org/trace/2023/05/trov#InternetIsolation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TRPAttribute"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The policy of always preventing Internet access during a TRP."
+    "@value" : "The TRP was conducted without network access."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "EnforcesInternetIsolation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TRSPolicy"
-  } ]
-}, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#EnforcesNoninteractiveExecution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The policy of always executing a TRP in a non-interactive mode."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "EnforcesNoninteractiveExecution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TRSPolicy"
-  } ]
-}, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#IncludesAllInputData",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "TRO composition includes all input data employed in creating the TRO."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "IncludesAllInputData"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TROAttribute"
+    "@value" : "InternetIsolation"
   } ]
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#ResearchArtifact",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A research artifact described by a TRO."
+    "@value" : "A digital object identified by a content hash."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ResearchArtifact"
   } ]
 }, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#TREAttribute",
+  "@id" : "https://w3id.org/trace/2023/05/trov#TRPAttribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An attribute of a TRS, TRP, or TRO."
+    "@value" : "A transparency attribute of a TRP, warranted by a TRS capability."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "TREAttribute"
-  } ]
-}, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#TROAttribute",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An attribute of a particular TRO."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "TROAttribute"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TREAttribute"
-  } ]
-}, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#TRSAttribute",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An attribute of a TRS."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "TRSAttribute"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TREAttribute"
+    "@value" : "TRPAttribute"
   } ]
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#TRSCapability",
@@ -224,80 +125,93 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "TRSCapability"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TRSAttribute"
-  } ]
-}, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#TRSPolicy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A policy always enforced by a particular TRS."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "TRSPolicy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TRSCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#TimeStampingAuthority",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A timestamping authority trusted by a TRS."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "TimeStampingAuthority"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchElement"
   } ]
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#TransparentResearchObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A set of research artifacts produced by a TRP and signed by the performing TRS."
+    "@value" : "A set of research artifacts produced by one or more TRPs and signed by the assembling TRS."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "TransparentResearchObject"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchElement"
-  } ]
-}, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchElement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Common base class for TRSs, TRPs, and TROs."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "TrustedResearchElement"
   } ]
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A set of research operations performed by a TRS."
-  }, {
-    "@value" : "An execution of a research process"
+    "@value" : "A supervised unit of work conducted by a TRS."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "TrustedResearchPerformance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchElement"
   } ]
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A system certified to perform TRPs and assemble TROs."
+    "@value" : "A system that performs TRPs and assembles TROs."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "TrustedResearchSystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#accessedArrangement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchElement"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "accessedArrangement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactArrangement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#contact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#contributedToArrangement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contributedToArrangement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactArrangement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#endedAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "endedAtTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#hasArrangement",
@@ -315,13 +229,37 @@
   "@id" : "https://w3id.org/trace/2023/05/trov#hasArtifact",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactCollection"
+    "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactComposition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasArtifact"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/trace/2023/05/trov#ResearchArtifact"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#hasAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Present but empty in pre-release implementations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TransparentResearchObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#hasCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCapability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TRSCapability"
   } ]
 }, {
   "@id" : "https://w3id.org/trace/2023/05/trov#hasComposition",
@@ -354,7 +292,7 @@
     "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactLocus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasLocus"
+    "@value" : "hasLocation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -372,6 +310,132 @@
     "@id" : "https://w3id.org/trace/2023/05/trov#ArtifactLocus"
   } ]
 }, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#hasPerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TransparentResearchObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#hasPerformanceAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPerformanceAttribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TRPAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#mimeType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The MIME type of an artifact."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#ResearchArtifact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mimeType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#owner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "owner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#publicKey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "publicKey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#sha256",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SHA-256 hash of an artifact's contents or a composition's sorted artifact hashes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "sha256"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#startedAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "startedAtTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#url",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "url"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/trace/2023/05/trov#warrantedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a transparency attribute to the TRS capability that warrants it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TRPAttribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "warrantedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/trace/2023/05/trov#TRSCapability"
+  } ]
+}, {
   "@id" : "https://w3id.org/trace/2023/05/trov#wasAssembledBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -384,15 +448,15 @@
     "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
   } ]
 }, {
-  "@id" : "https://w3id.org/trace/2023/05/trov#wasTimestampedBy",
+  "@id" : "https://w3id.org/trace/2023/05/trov#wasConductedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TransparentResearchObject"
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "wasTimestampedBy"
+    "@value" : "wasConductedBy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/trace/2023/05/trov#TimeStampingAuthority"
+    "@id" : "https://w3id.org/trace/2023/05/trov#TrustedResearchSystem"
   } ]
 } ]

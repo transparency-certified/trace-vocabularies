@@ -324,90 +324,6 @@
 #    Individuals
 #################################################################
 
-###  https://w3id.org/trace/trov/0.1#CanDetectInternetAccess
-<https://w3id.org/trace/trov/0.1#CanDetectInternetAccess> rdf:type owl:NamedIndividual ,
-                                                                   <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                          rdfs:comment "The TRS can detect Internet access during a TRP." ;
-                                                          rdfs:label "CanDetectInternetAccess" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanEnforceCapabilitiesTechnically
-<https://w3id.org/trace/trov/0.1#CanEnforceCapabilitiesTechnically> rdf:type owl:NamedIndividual ,
-                                                                             <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                                    rdfs:comment "The TRS can enforce all of its declared capabilities through technical means (as opposed to policy-based enforcement)." ;
-                                                                    rdfs:label "CanEnforceCapabilitiesTechnically" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanEnforceInternetIsolation
-<https://w3id.org/trace/trov/0.1#CanEnforceInternetIsolation> rdf:type owl:NamedIndividual ,
-                                                                       <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                              rdfs:comment "The TRS can enforce Internet isolation during a TRP." ;
-                                                              rdfs:label "CanEnforceInternetIsolation" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanEnsureCodeIncludedInTROPackage
-<https://w3id.org/trace/trov/0.1#CanEnsureCodeIncludedInTROPackage> rdf:type owl:NamedIndividual ,
-                                                                             <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                                    rdfs:comment "The TRS can ensure all custom code is included in the TRO package." ;
-                                                                    rdfs:label "CanEnsureCodeIncludedInTROPackage" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanEnsureInputDataIncludedInTROPackage
-<https://w3id.org/trace/trov/0.1#CanEnsureInputDataIncludedInTROPackage> rdf:type owl:NamedIndividual ,
-                                                                                  <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                                         rdfs:comment "The TRS can ensure all input data is included in the TRO package." ;
-                                                                         rdfs:label "CanEnsureInputDataIncludedInTROPackage" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanEnsureInputDataPersistsAfterRun
-<https://w3id.org/trace/trov/0.1#CanEnsureInputDataPersistsAfterRun> rdf:type owl:NamedIndividual ,
-                                                                              <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                                     rdfs:comment "The TRS can ensure all input data persists after a TRP." ;
-                                                                     rdfs:label "CanEnsureInputDataPersistsAfterRun" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanEnsureOutputDataIncludedInTROPackage
-<https://w3id.org/trace/trov/0.1#CanEnsureOutputDataIncludedInTROPackage> rdf:type owl:NamedIndividual ,
-                                                                                   <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                                          rdfs:comment "The TRS can ensure all output data is included in the TRO package." ;
-                                                                          rdfs:label "CanEnsureOutputDataIncludedInTROPackage" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanExcludeInputs
-<https://w3id.org/trace/trov/0.1#CanExcludeInputs> rdf:type owl:NamedIndividual ,
-                                                            <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                   rdfs:comment "The TRS can exclude input data from a TRO produced during a TRP." ;
-                                                   rdfs:label "CanExcludeInputs" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanExcludeOutputs
-<https://w3id.org/trace/trov/0.1#CanExcludeOutputs> rdf:type owl:NamedIndividual ,
-                                                             <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                    rdfs:comment "The TRS can exclude output data from a TRO produced during a TRP." ;
-                                                    rdfs:label "CanExcludeOutputs" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanIsolateEnvironment
-<https://w3id.org/trace/trov/0.1#CanIsolateEnvironment> rdf:type owl:NamedIndividual ,
-                                                                 <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                        rdfs:comment "The TRS can prevent access to the host environment during a TRP (e.g., sandbox or container execution)." ;
-                                                        rdfs:label "CanIsolateEnvironment" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanPreventAuthorIntervention
-<https://w3id.org/trace/trov/0.1#CanPreventAuthorIntervention> rdf:type owl:NamedIndividual ,
-                                                                        <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                               rdfs:comment "The TRS can prevent author intervention during a TRP (e.g., fully automated execution)." ;
-                                                               rdfs:label "CanPreventAuthorIntervention" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanPreventUserInteractionDuringRun
-<https://w3id.org/trace/trov/0.1#CanPreventUserInteractionDuringRun> rdf:type owl:NamedIndividual ,
-                                                                              <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                                     rdfs:comment "The TRS can prevent user interaction during a TRP." ;
-                                                                     rdfs:label "CanPreventUserInteractionDuringRun" .
-
-
 ###  https://w3id.org/trace/trov/0.1#CanProvideInternetIsolation
 <https://w3id.org/trace/trov/0.1#CanProvideInternetIsolation> rdf:type owl:NamedIndividual ,
                                                                        <https://w3id.org/trace/trov/0.1#TRSCapability> ;
@@ -420,27 +336,6 @@
                                                                    <https://w3id.org/trace/trov/0.1#TRSCapability> ;
                                                           rdfs:comment "The TRS can record all network accesses made during a TRP." ;
                                                           rdfs:label "CanRecordInternetAccess" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanRecordSoftwareEnvironment
-<https://w3id.org/trace/trov/0.1#CanRecordSoftwareEnvironment> rdf:type owl:NamedIndividual ,
-                                                                        <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                               rdfs:comment "The TRS can record a full description of the software environment." ;
-                                                               rdfs:label "CanRecordSoftwareEnvironment" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanRequireInputDataExistsBeforeRun
-<https://w3id.org/trace/trov/0.1#CanRequireInputDataExistsBeforeRun> rdf:type owl:NamedIndividual ,
-                                                                              <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                                     rdfs:comment "The TRS can require all input data exists prior to a TRP." ;
-                                                                     rdfs:label "CanRequireInputDataExistsBeforeRun" .
-
-
-###  https://w3id.org/trace/trov/0.1#CanRequireInputDataLocalBeforeRun
-<https://w3id.org/trace/trov/0.1#CanRequireInputDataLocalBeforeRun> rdf:type owl:NamedIndividual ,
-                                                                             <https://w3id.org/trace/trov/0.1#TRSCapability> ;
-                                                                    rdfs:comment "The TRS can require all input data is stored locally prior to a TRP." ;
-                                                                    rdfs:label "CanRequireInputDataLocalBeforeRun" .
 
 
 ###  https://w3id.org/trace/trov/0.1#IncludesAllInputData

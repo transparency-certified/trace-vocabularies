@@ -298,78 +298,6 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/trace/trov/0.1#CanDetectInternetAccess
-<https://w3id.org/trace/trov/0.1#CanDetectInternetAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanDetectInternetAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanDetectInternetAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can detect Internet access during a TRP." .
-<https://w3id.org/trace/trov/0.1#CanDetectInternetAccess> <http://www.w3.org/2000/01/rdf-schema#label> "CanDetectInternetAccess" .
-# 
-# https://w3id.org/trace/trov/0.1#CanEnforceCapabilitiesTechnically
-<https://w3id.org/trace/trov/0.1#CanEnforceCapabilitiesTechnically> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanEnforceCapabilitiesTechnically> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanEnforceCapabilitiesTechnically> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can enforce all of its declared capabilities through technical means (as opposed to policy-based enforcement)." .
-<https://w3id.org/trace/trov/0.1#CanEnforceCapabilitiesTechnically> <http://www.w3.org/2000/01/rdf-schema#label> "CanEnforceCapabilitiesTechnically" .
-# 
-# https://w3id.org/trace/trov/0.1#CanEnforceInternetIsolation
-<https://w3id.org/trace/trov/0.1#CanEnforceInternetIsolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanEnforceInternetIsolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanEnforceInternetIsolation> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can enforce Internet isolation during a TRP." .
-<https://w3id.org/trace/trov/0.1#CanEnforceInternetIsolation> <http://www.w3.org/2000/01/rdf-schema#label> "CanEnforceInternetIsolation" .
-# 
-# https://w3id.org/trace/trov/0.1#CanEnsureCodeIncludedInTROPackage
-<https://w3id.org/trace/trov/0.1#CanEnsureCodeIncludedInTROPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanEnsureCodeIncludedInTROPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanEnsureCodeIncludedInTROPackage> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can ensure all custom code is included in the TRO package." .
-<https://w3id.org/trace/trov/0.1#CanEnsureCodeIncludedInTROPackage> <http://www.w3.org/2000/01/rdf-schema#label> "CanEnsureCodeIncludedInTROPackage" .
-# 
-# https://w3id.org/trace/trov/0.1#CanEnsureInputDataIncludedInTROPackage
-<https://w3id.org/trace/trov/0.1#CanEnsureInputDataIncludedInTROPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanEnsureInputDataIncludedInTROPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanEnsureInputDataIncludedInTROPackage> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can ensure all input data is included in the TRO package." .
-<https://w3id.org/trace/trov/0.1#CanEnsureInputDataIncludedInTROPackage> <http://www.w3.org/2000/01/rdf-schema#label> "CanEnsureInputDataIncludedInTROPackage" .
-# 
-# https://w3id.org/trace/trov/0.1#CanEnsureInputDataPersistsAfterRun
-<https://w3id.org/trace/trov/0.1#CanEnsureInputDataPersistsAfterRun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanEnsureInputDataPersistsAfterRun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanEnsureInputDataPersistsAfterRun> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can ensure all input data persists after a TRP." .
-<https://w3id.org/trace/trov/0.1#CanEnsureInputDataPersistsAfterRun> <http://www.w3.org/2000/01/rdf-schema#label> "CanEnsureInputDataPersistsAfterRun" .
-# 
-# https://w3id.org/trace/trov/0.1#CanEnsureOutputDataIncludedInTROPackage
-<https://w3id.org/trace/trov/0.1#CanEnsureOutputDataIncludedInTROPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanEnsureOutputDataIncludedInTROPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanEnsureOutputDataIncludedInTROPackage> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can ensure all output data is included in the TRO package." .
-<https://w3id.org/trace/trov/0.1#CanEnsureOutputDataIncludedInTROPackage> <http://www.w3.org/2000/01/rdf-schema#label> "CanEnsureOutputDataIncludedInTROPackage" .
-# 
-# https://w3id.org/trace/trov/0.1#CanExcludeInputs
-<https://w3id.org/trace/trov/0.1#CanExcludeInputs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanExcludeInputs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanExcludeInputs> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can exclude input data from a TRO produced during a TRP." .
-<https://w3id.org/trace/trov/0.1#CanExcludeInputs> <http://www.w3.org/2000/01/rdf-schema#label> "CanExcludeInputs" .
-# 
-# https://w3id.org/trace/trov/0.1#CanExcludeOutputs
-<https://w3id.org/trace/trov/0.1#CanExcludeOutputs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanExcludeOutputs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanExcludeOutputs> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can exclude output data from a TRO produced during a TRP." .
-<https://w3id.org/trace/trov/0.1#CanExcludeOutputs> <http://www.w3.org/2000/01/rdf-schema#label> "CanExcludeOutputs" .
-# 
-# https://w3id.org/trace/trov/0.1#CanIsolateEnvironment
-<https://w3id.org/trace/trov/0.1#CanIsolateEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanIsolateEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanIsolateEnvironment> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can prevent access to the host environment during a TRP (e.g., sandbox or container execution)." .
-<https://w3id.org/trace/trov/0.1#CanIsolateEnvironment> <http://www.w3.org/2000/01/rdf-schema#label> "CanIsolateEnvironment" .
-# 
-# https://w3id.org/trace/trov/0.1#CanPreventAuthorIntervention
-<https://w3id.org/trace/trov/0.1#CanPreventAuthorIntervention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanPreventAuthorIntervention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanPreventAuthorIntervention> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can prevent author intervention during a TRP (e.g., fully automated execution)." .
-<https://w3id.org/trace/trov/0.1#CanPreventAuthorIntervention> <http://www.w3.org/2000/01/rdf-schema#label> "CanPreventAuthorIntervention" .
-# 
-# https://w3id.org/trace/trov/0.1#CanPreventUserInteractionDuringRun
-<https://w3id.org/trace/trov/0.1#CanPreventUserInteractionDuringRun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanPreventUserInteractionDuringRun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanPreventUserInteractionDuringRun> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can prevent user interaction during a TRP." .
-<https://w3id.org/trace/trov/0.1#CanPreventUserInteractionDuringRun> <http://www.w3.org/2000/01/rdf-schema#label> "CanPreventUserInteractionDuringRun" .
-# 
 # https://w3id.org/trace/trov/0.1#CanProvideInternetIsolation
 <https://w3id.org/trace/trov/0.1#CanProvideInternetIsolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/trace/trov/0.1#CanProvideInternetIsolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
@@ -381,24 +309,6 @@
 <https://w3id.org/trace/trov/0.1#CanRecordInternetAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
 <https://w3id.org/trace/trov/0.1#CanRecordInternetAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can record all network accesses made during a TRP." .
 <https://w3id.org/trace/trov/0.1#CanRecordInternetAccess> <http://www.w3.org/2000/01/rdf-schema#label> "CanRecordInternetAccess" .
-# 
-# https://w3id.org/trace/trov/0.1#CanRecordSoftwareEnvironment
-<https://w3id.org/trace/trov/0.1#CanRecordSoftwareEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanRecordSoftwareEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanRecordSoftwareEnvironment> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can record a full description of the software environment." .
-<https://w3id.org/trace/trov/0.1#CanRecordSoftwareEnvironment> <http://www.w3.org/2000/01/rdf-schema#label> "CanRecordSoftwareEnvironment" .
-# 
-# https://w3id.org/trace/trov/0.1#CanRequireInputDataExistsBeforeRun
-<https://w3id.org/trace/trov/0.1#CanRequireInputDataExistsBeforeRun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanRequireInputDataExistsBeforeRun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanRequireInputDataExistsBeforeRun> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can require all input data exists prior to a TRP." .
-<https://w3id.org/trace/trov/0.1#CanRequireInputDataExistsBeforeRun> <http://www.w3.org/2000/01/rdf-schema#label> "CanRequireInputDataExistsBeforeRun" .
-# 
-# https://w3id.org/trace/trov/0.1#CanRequireInputDataLocalBeforeRun
-<https://w3id.org/trace/trov/0.1#CanRequireInputDataLocalBeforeRun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/trace/trov/0.1#CanRequireInputDataLocalBeforeRun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/trace/trov/0.1#TRSCapability> .
-<https://w3id.org/trace/trov/0.1#CanRequireInputDataLocalBeforeRun> <http://www.w3.org/2000/01/rdf-schema#comment> "The TRS can require all input data is stored locally prior to a TRP." .
-<https://w3id.org/trace/trov/0.1#CanRequireInputDataLocalBeforeRun> <http://www.w3.org/2000/01/rdf-schema#label> "CanRequireInputDataLocalBeforeRun" .
 # 
 # https://w3id.org/trace/trov/0.1#IncludesAllInputData
 <https://w3id.org/trace/trov/0.1#IncludesAllInputData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

@@ -8,249 +8,472 @@
 
 <https://w3id.org/trace/trov/0.1/> rdf:type owl:Ontology ;
                                     owl:versionIRI <https://w3id.org/trace/trov/0.1/> ;
-                                    rdfs:comment "This document defines vocabulary for describing a Transparent Research Object (TRO)"@en ;
+                                    rdfs:comment "Vocabulary for describing Transparent Research Objects (TROs), the systems that produce them, and the transparency conditions under which they were created."@en ;
                                     rdfs:label "Transparent Research Object Vocabulary"@en ;
-                                    owl:versionInfo "Version 0.1" .
+                                    owl:versionInfo "Version 0.1 (draft)" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/trace/trov/0.1#createdWith
+<https://w3id.org/trace/trov/0.1#createdWith> rdfs:comment "Software tool that generated this TRO declaration (optional)." ;
+                                              rdfs:label "createdWith" ;
+                                              rdf:type owl:AnnotationProperty ;
+                                              rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> .
+
+
+###  https://w3id.org/trace/trov/0.1#customTerm
+<https://w3id.org/trace/trov/0.1#customTerm> rdfs:comment "Declares a custom term that extends a TROV class." ;
+                                             rdfs:label "customTerm" ;
+                                             rdf:type owl:AnnotationProperty ;
+                                             rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchSystem> .
+
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/trace/2023/05/trov#hasArrangement
-<https://w3id.org/trace/2023/05/trov#hasArrangement> rdf:type owl:ObjectProperty ;
-                                                     rdfs:domain <https://w3id.org/trace/2023/05/trov#TransparentResearchObject> ;
-                                                     rdfs:range <https://w3id.org/trace/2023/05/trov#ArtifactArrangement> ;
-                                                     rdfs:label "hasArrangement" .
+###  https://w3id.org/trace/trov/0.1#accessedArrangement
+<https://w3id.org/trace/trov/0.1#accessedArrangement> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
+                                                      rdfs:range <https://w3id.org/trace/trov/0.1#ArtifactArrangement> ;
+                                                      rdfs:label "accessedArrangement" .
 
 
-###  https://w3id.org/trace/2023/05/trov#hasArtifact
-<https://w3id.org/trace/2023/05/trov#hasArtifact> rdf:type owl:ObjectProperty ;
-                                                  rdfs:domain <https://w3id.org/trace/2023/05/trov#ArtifactCollection> ;
-                                                  rdfs:range <https://w3id.org/trace/2023/05/trov#ResearchArtifact> ;
-                                                  rdfs:label "hasArtifact" .
+###  https://w3id.org/trace/trov/0.1#artifact
+<https://w3id.org/trace/trov/0.1#artifact> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://w3id.org/trace/trov/0.1#ArtifactLocation> ;
+                                           rdfs:range <https://w3id.org/trace/trov/0.1#ResearchArtifact> ;
+                                           rdfs:comment "Links a location to the artifact placed there." ;
+                                           rdfs:label "artifact" .
 
 
-###  https://w3id.org/trace/2023/05/trov#hasComposition
-<https://w3id.org/trace/2023/05/trov#hasComposition> rdf:type owl:ObjectProperty ;
-                                                     rdfs:domain <https://w3id.org/trace/2023/05/trov#TransparentResearchObject> ;
-                                                     rdfs:range <https://w3id.org/trace/2023/05/trov#ArtifactComposition> ;
-                                                     rdfs:label "hasComposition" .
+###  https://w3id.org/trace/trov/0.1#contributedToArrangement
+<https://w3id.org/trace/trov/0.1#contributedToArrangement> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
+                                                           rdfs:range <https://w3id.org/trace/trov/0.1#ArtifactArrangement> ;
+                                                           rdfs:label "contributedToArrangement" .
 
 
-###  https://w3id.org/trace/2023/05/trov#hasFingerprint
-<https://w3id.org/trace/2023/05/trov#hasFingerprint> rdf:type owl:ObjectProperty ;
-                                                     rdfs:domain <https://w3id.org/trace/2023/05/trov#ArtifactComposition> ;
-                                                     rdfs:range <https://w3id.org/trace/2023/05/trov#CompositionFingerprint> ;
-                                                     rdfs:label "hasFingerprint" .
+###  https://w3id.org/trace/trov/0.1#hasArrangement
+<https://w3id.org/trace/trov/0.1#hasArrangement> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
+                                                 rdfs:range <https://w3id.org/trace/trov/0.1#ArtifactArrangement> ;
+                                                 rdfs:label "hasArrangement" .
 
 
-###  https://w3id.org/trace/2023/05/trov#hasLocus
-<https://w3id.org/trace/2023/05/trov#hasLocus> rdf:type owl:ObjectProperty ;
-                                               rdfs:domain <https://w3id.org/trace/2023/05/trov#ArtifactArrangement> ;
-                                               rdfs:range <https://w3id.org/trace/2023/05/trov#ArtifactLocus> ;
-                                               rdfs:label "hasLocus" .
+###  https://w3id.org/trace/trov/0.1#hasArtifact
+<https://w3id.org/trace/trov/0.1#hasArtifact> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <https://w3id.org/trace/trov/0.1#ArtifactComposition> ;
+                                              rdfs:range <https://w3id.org/trace/trov/0.1#ResearchArtifact> ;
+                                              rdfs:label "hasArtifact" .
 
 
-###  https://w3id.org/trace/2023/05/trov#wasAssembledBy
-<https://w3id.org/trace/2023/05/trov#wasAssembledBy> rdf:type owl:ObjectProperty ;
-                                                     rdfs:domain <https://w3id.org/trace/2023/05/trov#TransparentResearchObject> ;
-                                                     rdfs:range <https://w3id.org/trace/2023/05/trov#TrustedResearchSystem> ;
-                                                     rdfs:label "wasAssembledBy" .
+###  https://w3id.org/trace/trov/0.1#hasArtifactLocation
+<https://w3id.org/trace/trov/0.1#hasArtifactLocation> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <https://w3id.org/trace/trov/0.1#ArtifactArrangement> ;
+                                                      rdfs:range <https://w3id.org/trace/trov/0.1#ArtifactLocation> ;
+                                                      rdfs:label "hasArtifactLocation" .
 
 
-###  https://w3id.org/trace/2023/05/trov#wasTimestampedBy
-<https://w3id.org/trace/2023/05/trov#wasTimestampedBy> rdf:type owl:ObjectProperty ;
-                                                       rdfs:domain <https://w3id.org/trace/2023/05/trov#TransparentResearchObject> ;
-                                                       rdfs:range <https://w3id.org/trace/2023/05/trov#TimeStampingAuthority> ;
-                                                       rdfs:label "wasTimestampedBy" .
+###  https://w3id.org/trace/trov/0.1#hasAttribute
+<https://w3id.org/trace/trov/0.1#hasAttribute> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
+                                               rdfs:range <https://w3id.org/trace/trov/0.1#TROAttribute> ;
+                                               rdfs:label "hasAttribute" .
+
+
+###  https://w3id.org/trace/trov/0.1#hasCapability
+<https://w3id.org/trace/trov/0.1#hasCapability> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchSystem> ;
+                                                rdfs:range <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                rdfs:label "hasCapability" .
+
+
+###  https://w3id.org/trace/trov/0.1#hasComposition
+<https://w3id.org/trace/trov/0.1#hasComposition> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
+                                                 rdfs:range <https://w3id.org/trace/trov/0.1#ArtifactComposition> ;
+                                                 rdfs:label "hasComposition" .
+
+
+###  https://w3id.org/trace/trov/0.1#hasFingerprint
+<https://w3id.org/trace/trov/0.1#hasFingerprint> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <https://w3id.org/trace/trov/0.1#ArtifactComposition> ;
+                                                 rdfs:range <https://w3id.org/trace/trov/0.1#CompositionFingerprint> ;
+                                                 rdfs:label "hasFingerprint" .
+
+
+###  https://w3id.org/trace/trov/0.1#hasPerformance
+<https://w3id.org/trace/trov/0.1#hasPerformance> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
+                                                 rdfs:range <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
+                                                 rdfs:label "hasPerformance" .
+
+
+###  https://w3id.org/trace/trov/0.1#hasPerformanceAttribute
+<https://w3id.org/trace/trov/0.1#hasPerformanceAttribute> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
+                                                          rdfs:range <https://w3id.org/trace/trov/0.1#TRPAttribute> ;
+                                                          rdfs:label "hasPerformanceAttribute" .
+
+
+###  https://w3id.org/trace/trov/0.1#wasAssembledBy
+<https://w3id.org/trace/trov/0.1#wasAssembledBy> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
+                                                 rdfs:range <https://w3id.org/trace/trov/0.1#TrustedResearchSystem> ;
+                                                 rdfs:label "wasAssembledBy" .
+
+
+###  https://w3id.org/trace/trov/0.1#wasConductedBy
+<https://w3id.org/trace/trov/0.1#wasConductedBy> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
+                                                 rdfs:range <https://w3id.org/trace/trov/0.1#TrustedResearchSystem> ;
+                                                 rdfs:label "wasConductedBy" .
+
+
+###  https://w3id.org/trace/trov/0.1#wasTimestampedBy
+<https://w3id.org/trace/trov/0.1#wasTimestampedBy> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
+                                                   rdfs:range <https://w3id.org/trace/trov/0.1#TimeStampingAuthority> ;
+                                                   rdfs:label "wasTimestampedBy" .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://w3id.org/trace/2023/05/trov#hasLocation
-<https://w3id.org/trace/2023/05/trov#hasLocation> rdf:type owl:DatatypeProperty ;
-                                                  rdfs:domain <https://w3id.org/trace/2023/05/trov#ArtifactLocus> ;
-                                                  rdfs:range rdfs:Literal ;
-                                                  rdfs:label "hasLocus" .
+###  https://w3id.org/trace/trov/0.1#endedAtTime
+<https://w3id.org/trace/trov/0.1#endedAtTime> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
+                                              rdfs:range rdfs:Literal ;
+                                              rdfs:label "endedAtTime" .
+
+
+###  https://w3id.org/trace/trov/0.1#hashAlgorithm
+<https://w3id.org/trace/trov/0.1#hashAlgorithm> rdf:type owl:DatatypeProperty ;
+                                                rdfs:range rdfs:Literal ;
+                                                rdfs:comment "The algorithm used to compute the hash (e.g. sha256, hmac-sha256)." ;
+                                                rdfs:label "hashAlgorithm" .
+
+
+###  https://w3id.org/trace/trov/0.1#hashValue
+<https://w3id.org/trace/trov/0.1#hashValue> rdf:type owl:DatatypeProperty ;
+                                            rdfs:range rdfs:Literal ;
+                                            rdfs:comment "The computed hash value." ;
+                                            rdfs:label "hashValue" .
+
+
+###  https://w3id.org/trace/trov/0.1#mimeType
+<https://w3id.org/trace/trov/0.1#mimeType> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://w3id.org/trace/trov/0.1#ResearchArtifact> ;
+                                           rdfs:range rdfs:Literal ;
+                                           rdfs:comment "The MIME type of an artifact." ;
+                                           rdfs:label "mimeType" .
+
+
+###  https://w3id.org/trace/trov/0.1#path
+<https://w3id.org/trace/trov/0.1#path> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://w3id.org/trace/trov/0.1#ArtifactLocation> ;
+                                       rdfs:range rdfs:Literal ;
+                                       rdfs:comment "The resource path for the artifact within this arrangement." ;
+                                       rdfs:label "path" .
+
+
+###  https://w3id.org/trace/trov/0.1#publicKey
+<https://w3id.org/trace/trov/0.1#publicKey> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchSystem> ;
+                                            rdfs:range rdfs:Literal ;
+                                            rdfs:comment "The TRS's public key. Required for GPG signing. Not needed for X.509/CMS." ;
+                                            rdfs:label "publicKey" .
+
+
+###  https://w3id.org/trace/trov/0.1#startedAtTime
+<https://w3id.org/trace/trov/0.1#startedAtTime> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> ;
+                                                rdfs:range rdfs:Literal ;
+                                                rdfs:label "startedAtTime" .
+
+
+###  https://w3id.org/trace/trov/0.1#vocabularyVersion
+<https://w3id.org/trace/trov/0.1#vocabularyVersion> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <https://w3id.org/trace/trov/0.1#TransparentResearchObject> ;
+                                                    rdfs:range rdfs:Literal ;
+                                                    rdfs:comment "The TROV vocabulary version this declaration conforms to." ;
+                                                    rdfs:label "vocabularyVersion" .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  https://w3id.org/trace/2023/05/trov#ArtifactArrangement
-<https://w3id.org/trace/2023/05/trov#ArtifactArrangement> rdf:type owl:Class ;
-                                                          rdfs:comment "A set of loci describing the location of one or more artifacts" ;
-                                                          rdfs:label "ArtifactArrangement" .
+###  https://w3id.org/trace/trov/0.1#ArtifactArrangement
+<https://w3id.org/trace/trov/0.1#ArtifactArrangement> rdf:type owl:Class ;
+                                                      rdfs:comment "A named collection of artifact locations. Arrangements are linked to performances as inputs or outputs." ;
+                                                      rdfs:label "ArtifactArrangement" .
 
 
-###  https://w3id.org/trace/2023/05/trov#ArtifactCollection
-<https://w3id.org/trace/2023/05/trov#ArtifactCollection> rdf:type owl:Class ;
-                                                         rdfs:comment "Base class for collections of one or more artifacts." ;
-                                                         rdfs:label "ArtifactCollection" .
+###  https://w3id.org/trace/trov/0.1#ArtifactCollection
+<https://w3id.org/trace/trov/0.1#ArtifactCollection> rdf:type owl:Class ;
+                                                     rdfs:comment "Base class for collections of one or more artifacts." ;
+                                                     rdfs:label "ArtifactCollection" .
 
 
-###  https://w3id.org/trace/2023/05/trov#ArtifactComposition
-<https://w3id.org/trace/2023/05/trov#ArtifactComposition> rdf:type owl:Class ;
-                                                          rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#ArtifactCollection> ;
-                                                          rdfs:comment "A set of artifacts described by a TRO." ;
-                                                          rdfs:label "ArtifactComposition" .
+###  https://w3id.org/trace/trov/0.1#ArtifactComposition
+<https://w3id.org/trace/trov/0.1#ArtifactComposition> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://w3id.org/trace/trov/0.1#ArtifactCollection> ;
+                                                      rdfs:comment "The set of all digital artifacts described by a TRO, identified by a composition fingerprint." ;
+                                                      rdfs:label "ArtifactComposition" .
 
 
-###  https://w3id.org/trace/2023/05/trov#ArtifactLocus
-<https://w3id.org/trace/2023/05/trov#ArtifactLocus> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#ArtifactCollection> ;
-                                                    rdfs:comment "The location of a specific artifact." ;
-                                                    rdfs:label "ArtifactLocus" .
+###  https://w3id.org/trace/trov/0.1#ArtifactLocation
+<https://w3id.org/trace/trov/0.1#ArtifactLocation> rdf:type owl:Class ;
+                                                   rdfs:comment "The placement of a specific artifact within an arrangement. Links one artifact to one resource path." ;
+                                                   rdfs:label "ArtifactLocation" .
 
 
-###  https://w3id.org/trace/2023/05/trov#CanExcludeInputs
-<https://w3id.org/trace/2023/05/trov#CanExcludeInputs> rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TRSCapability> ;
-                                                       rdfs:comment "The capability to exclude input data from a TRO created during a TRP." ;
-                                                       rdfs:label "CanExcludeInputs" .
+###  https://w3id.org/trace/trov/0.1#CompositionFingerprint
+<https://w3id.org/trace/trov/0.1#CompositionFingerprint> rdf:type owl:Class ;
+                                                         rdfs:comment "A hash computed over the sorted hashes of all artifacts in a composition." ;
+                                                         rdfs:label "CompositionFingerprint" .
 
 
-###  https://w3id.org/trace/2023/05/trov#CanExcludeOutputs
-<https://w3id.org/trace/2023/05/trov#CanExcludeOutputs> rdf:type owl:Class ;
-                                                        rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TRSCapability> ;
-                                                        rdfs:comment "The capability to exclude output data from a TRO created during a TRP." ;
-                                                        rdfs:label "CanExcludeOutputs" .
+###  https://w3id.org/trace/trov/0.1#ResearchArtifact
+<https://w3id.org/trace/trov/0.1#ResearchArtifact> rdf:type owl:Class ;
+                                                   rdfs:comment "A digital object (file, dataset, or bitstream) identified by a content hash." ;
+                                                   rdfs:label "ResearchArtifact" .
 
 
-###  https://w3id.org/trace/2023/05/trov#CanIsolateEnvironment
-<https://w3id.org/trace/2023/05/trov#CanIsolateEnvironment> rdf:type owl:Class ;
-                                                            rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TRSCapability> ;
-                                                            rdfs:comment """The capability to prevent access to the host environment during a TRP.
-                    Usually indicates that the TRP is executed in a sandbox or container.""" ;
-                                                            rdfs:label "CanIsolateEnvironment" .
+###  https://w3id.org/trace/trov/0.1#TREAttribute
+<https://w3id.org/trace/trov/0.1#TREAttribute> rdf:type owl:Class ;
+                                               rdfs:comment "Base class for attributes of a TRS, TRP, or TRO." ;
+                                               rdfs:label "TREAttribute" .
 
 
-###  https://w3id.org/trace/2023/05/trov#CanPreventAuthorIntervention
-<https://w3id.org/trace/2023/05/trov#CanPreventAuthorIntervention> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TRSCapability> ;
-                                                                   rdfs:comment """The capability to prevent author intervention during a TRP.
-                    Usually indicates that the TRP is fully automated or performed by
-                    an independent agent.""" ;
-                                                                   rdfs:label "CanPreventAuthorIntervention" .
+###  https://w3id.org/trace/trov/0.1#TROAttribute
+<https://w3id.org/trace/trov/0.1#TROAttribute> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://w3id.org/trace/trov/0.1#TREAttribute> ;
+                                               rdfs:comment "A transparency claim about a TRO as a whole, warranted by attributes of its constituent TRPs." ;
+                                               rdfs:label "TROAttribute" .
 
 
-###  https://w3id.org/trace/2023/05/trov#CanProvideInternetIsolation
-<https://w3id.org/trace/2023/05/trov#CanProvideInternetIsolation> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TRSCapability> ;
-                                                                  rdfs:comment "The capability to prevent Internet access during a TRP." ;
-                                                                  rdfs:label "CanProvideInternetIsolation" .
+###  https://w3id.org/trace/trov/0.1#TRPAttribute
+<https://w3id.org/trace/trov/0.1#TRPAttribute> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://w3id.org/trace/trov/0.1#TREAttribute> ;
+                                               rdfs:comment "A transparency claim about the conditions under which a specific TRP was conducted." ;
+                                               rdfs:label "TRPAttribute" .
 
 
-###  https://w3id.org/trace/2023/05/trov#CompositionFingerprint
-<https://w3id.org/trace/2023/05/trov#CompositionFingerprint> rdf:type owl:Class ;
-                                                             rdfs:comment "Unique fingerprint of a particular artifact composition" ;
-                                                             rdfs:label "CompositionFingerprint" .
+###  https://w3id.org/trace/trov/0.1#TRSAttribute
+<https://w3id.org/trace/trov/0.1#TRSAttribute> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://w3id.org/trace/trov/0.1#TREAttribute> ;
+                                               rdfs:comment "An attribute of a TRS." ;
+                                               rdfs:label "TRSAttribute" .
 
 
-###  https://w3id.org/trace/2023/05/trov#EnforcesEnvironmentIsolation
-<https://w3id.org/trace/2023/05/trov#EnforcesEnvironmentIsolation> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TRSPolicy> ;
-                                                                   rdfs:comment "The policy of always isolating the host environment during a TRP." ;
-                                                                   rdfs:label "EnforcesEnvironmentIsolation" .
+###  https://w3id.org/trace/trov/0.1#TRSCapability
+<https://w3id.org/trace/trov/0.1#TRSCapability> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://w3id.org/trace/trov/0.1#TRSAttribute> ;
+                                                rdfs:comment "A declared ability of a TRS to enforce a specific transparency condition." ;
+                                                rdfs:label "TRSCapability" .
 
 
-###  https://w3id.org/trace/2023/05/trov#EnforcesInternetIsolation
-<https://w3id.org/trace/2023/05/trov#EnforcesInternetIsolation> rdf:type owl:Class ;
-                                                                rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TRSPolicy> ;
-                                                                rdfs:comment "The policy of always preventing Internet access during a TRP." ;
-                                                                rdfs:label "EnforcesInternetIsolation" .
+###  https://w3id.org/trace/trov/0.1#TRSPolicy
+<https://w3id.org/trace/trov/0.1#TRSPolicy> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                            rdfs:comment "A TRS-level assertion about a capability. Under redesign — see TROV vocabulary documentation." ;
+                                            rdfs:label "TRSPolicy" .
 
 
-###  https://w3id.org/trace/2023/05/trov#EnforcesNoninteractiveExecution
-<https://w3id.org/trace/2023/05/trov#EnforcesNoninteractiveExecution> rdf:type owl:Class ;
-                                                                      rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TRSPolicy> ;
-                                                                      rdfs:comment "The policy of always executing a TRP in a non-interactive mode." ;
-                                                                      rdfs:label "EnforcesNoninteractiveExecution" .
+###  https://w3id.org/trace/trov/0.1#TimeStampingAuthority
+<https://w3id.org/trace/trov/0.1#TimeStampingAuthority> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://w3id.org/trace/trov/0.1#TrustedResearchElement> ;
+                                                        rdfs:comment "An RFC 3161 timestamping authority trusted by a TRS." ;
+                                                        rdfs:label "TimeStampingAuthority" .
 
 
-###  https://w3id.org/trace/2023/05/trov#IncludesAllInputData
-<https://w3id.org/trace/2023/05/trov#IncludesAllInputData> rdf:type owl:Class ;
-                                                           rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TROAttribute> ;
-                                                           rdfs:comment "TRO composition includes all input data employed in creating the TRO." ;
-                                                           rdfs:label "IncludesAllInputData" .
+###  https://w3id.org/trace/trov/0.1#TransparentResearchObject
+<https://w3id.org/trace/trov/0.1#TransparentResearchObject> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://w3id.org/trace/trov/0.1#TrustedResearchElement> ;
+                                                            rdfs:comment "A set of research artifacts produced by one or more TRPs and signed by the assembling TRS." ;
+                                                            rdfs:label "TransparentResearchObject" .
 
 
-###  https://w3id.org/trace/2023/05/trov#ResearchArtifact
-<https://w3id.org/trace/2023/05/trov#ResearchArtifact> rdf:type owl:Class ;
-                                                       rdfs:comment "A research artifact described by a TRO." ;
-                                                       rdfs:label "ResearchArtifact" .
+###  https://w3id.org/trace/trov/0.1#TrustedResearchElement
+<https://w3id.org/trace/trov/0.1#TrustedResearchElement> rdf:type owl:Class ;
+                                                         rdfs:comment "Common base class for TRSs, TRPs, and TROs." ;
+                                                         rdfs:label "TrustedResearchElement" .
 
 
-###  https://w3id.org/trace/2023/05/trov#TREAttribute
-<https://w3id.org/trace/2023/05/trov#TREAttribute> rdf:type owl:Class ;
-                                                   rdfs:comment "An attribute of a TRS, TRP, or TRO." ;
-                                                   rdfs:label "TREAttribute" .
+###  https://w3id.org/trace/trov/0.1#TrustedResearchPerformance
+<https://w3id.org/trace/trov/0.1#TrustedResearchPerformance> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <https://w3id.org/trace/trov/0.1#TrustedResearchElement> ;
+                                                             rdfs:comment "A supervised unit of work conducted by a TRS. The centerpiece of the TRACE conceptual model." ;
+                                                             rdfs:label "TrustedResearchPerformance" .
 
 
-###  https://w3id.org/trace/2023/05/trov#TROAttribute
-<https://w3id.org/trace/2023/05/trov#TROAttribute> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TREAttribute> ;
-                                                   rdfs:comment "An attribute of a particular TRO." ;
-                                                   rdfs:label "TROAttribute" .
+###  https://w3id.org/trace/trov/0.1#TrustedResearchSystem
+<https://w3id.org/trace/trov/0.1#TrustedResearchSystem> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://w3id.org/trace/trov/0.1#TrustedResearchElement> ;
+                                                        rdfs:comment "A system that performs TRPs and assembles TROs." ;
+                                                        rdfs:label "TrustedResearchSystem" .
 
 
-###  https://w3id.org/trace/2023/05/trov#TRSAttribute
-<https://w3id.org/trace/2023/05/trov#TRSAttribute> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TREAttribute> ;
-                                                   rdfs:comment "An attribute of a TRS." ;
-                                                   rdfs:label "TRSAttribute" .
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/trace/trov/0.1#CanDetectInternetAccess
+<https://w3id.org/trace/trov/0.1#CanDetectInternetAccess> rdf:type owl:NamedIndividual ,
+                                                                   <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                          rdfs:comment "The TRS can detect Internet access during a TRP." ;
+                                                          rdfs:label "CanDetectInternetAccess" .
 
 
-###  https://w3id.org/trace/2023/05/trov#TRSCapability
-<https://w3id.org/trace/2023/05/trov#TRSCapability> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TRSAttribute> ;
-                                                    rdfs:comment "A capability of a TRS." ;
-                                                    rdfs:label "TRSCapability" .
+###  https://w3id.org/trace/trov/0.1#CanEnforceCapabilitiesTechnically
+<https://w3id.org/trace/trov/0.1#CanEnforceCapabilitiesTechnically> rdf:type owl:NamedIndividual ,
+                                                                             <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                                    rdfs:comment "The TRS can enforce all of its declared capabilities through technical means (as opposed to policy-based enforcement)." ;
+                                                                    rdfs:label "CanEnforceCapabilitiesTechnically" .
 
 
-###  https://w3id.org/trace/2023/05/trov#TRSPolicy
-<https://w3id.org/trace/2023/05/trov#TRSPolicy> rdf:type owl:Class ;
-                                                rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TRSCapability> ;
-                                                rdfs:comment "A policy always enforced by a particular TRS." ;
-                                                rdfs:label "TRSPolicy" .
+###  https://w3id.org/trace/trov/0.1#CanEnforceInternetIsolation
+<https://w3id.org/trace/trov/0.1#CanEnforceInternetIsolation> rdf:type owl:NamedIndividual ,
+                                                                       <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                              rdfs:comment "The TRS can enforce Internet isolation during a TRP." ;
+                                                              rdfs:label "CanEnforceInternetIsolation" .
 
 
-###  https://w3id.org/trace/2023/05/trov#TimeStampingAuthority
-<https://w3id.org/trace/2023/05/trov#TimeStampingAuthority> rdf:type owl:Class ;
-                                                            rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TrustedResearchElement> ;
-                                                            rdfs:comment "A timestamping authority trusted by a TRS." ;
-                                                            rdfs:label "TimeStampingAuthority" .
+###  https://w3id.org/trace/trov/0.1#CanEnsureCodeIncludedInTROPackage
+<https://w3id.org/trace/trov/0.1#CanEnsureCodeIncludedInTROPackage> rdf:type owl:NamedIndividual ,
+                                                                             <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                                    rdfs:comment "The TRS can ensure all custom code is included in the TRO package." ;
+                                                                    rdfs:label "CanEnsureCodeIncludedInTROPackage" .
 
 
-###  https://w3id.org/trace/2023/05/trov#TransparentResearchObject
-<https://w3id.org/trace/2023/05/trov#TransparentResearchObject> rdf:type owl:Class ;
-                                                                rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TrustedResearchElement> ;
-                                                                rdfs:comment "A set of research artifacts produced by a TRP and signed by the performing TRS." ;
-                                                                rdfs:label "TransparentResearchObject" .
+###  https://w3id.org/trace/trov/0.1#CanEnsureInputDataIncludedInTROPackage
+<https://w3id.org/trace/trov/0.1#CanEnsureInputDataIncludedInTROPackage> rdf:type owl:NamedIndividual ,
+                                                                                  <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                                         rdfs:comment "The TRS can ensure all input data is included in the TRO package." ;
+                                                                         rdfs:label "CanEnsureInputDataIncludedInTROPackage" .
 
 
-###  https://w3id.org/trace/2023/05/trov#TrustedResearchElement
-<https://w3id.org/trace/2023/05/trov#TrustedResearchElement> rdf:type owl:Class ;
-                                                             rdfs:comment "Common base class for TRSs, TRPs, and TROs." ;
-                                                             rdfs:label "TrustedResearchElement" .
+###  https://w3id.org/trace/trov/0.1#CanEnsureInputDataPersistsAfterRun
+<https://w3id.org/trace/trov/0.1#CanEnsureInputDataPersistsAfterRun> rdf:type owl:NamedIndividual ,
+                                                                              <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                                     rdfs:comment "The TRS can ensure all input data persists after a TRP." ;
+                                                                     rdfs:label "CanEnsureInputDataPersistsAfterRun" .
 
 
-###  https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance
-<https://w3id.org/trace/2023/05/trov#TrustedResearchPerformance> rdf:type owl:Class ;
-                                                                 rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TrustedResearchElement> ;
-                                                                 rdfs:comment "A set of research operations performed by a TRS." ,
-                                                                              "An execution of a research process" ;
-                                                                 rdfs:label "TrustedResearchPerformance" .
+###  https://w3id.org/trace/trov/0.1#CanEnsureOutputDataIncludedInTROPackage
+<https://w3id.org/trace/trov/0.1#CanEnsureOutputDataIncludedInTROPackage> rdf:type owl:NamedIndividual ,
+                                                                                   <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                                          rdfs:comment "The TRS can ensure all output data is included in the TRO package." ;
+                                                                          rdfs:label "CanEnsureOutputDataIncludedInTROPackage" .
 
 
-###  https://w3id.org/trace/2023/05/trov#TrustedResearchSystem
-<https://w3id.org/trace/2023/05/trov#TrustedResearchSystem> rdf:type owl:Class ;
-                                                            rdfs:subClassOf <https://w3id.org/trace/2023/05/trov#TrustedResearchElement> ;
-                                                            rdfs:comment "A system certified to perform TRPs and assemble TROs." ;
-                                                            rdfs:label "TrustedResearchSystem" .
+###  https://w3id.org/trace/trov/0.1#CanExcludeInputs
+<https://w3id.org/trace/trov/0.1#CanExcludeInputs> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                   rdfs:comment "The TRS can exclude input data from a TRO produced during a TRP." ;
+                                                   rdfs:label "CanExcludeInputs" .
+
+
+###  https://w3id.org/trace/trov/0.1#CanExcludeOutputs
+<https://w3id.org/trace/trov/0.1#CanExcludeOutputs> rdf:type owl:NamedIndividual ,
+                                                             <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                    rdfs:comment "The TRS can exclude output data from a TRO produced during a TRP." ;
+                                                    rdfs:label "CanExcludeOutputs" .
+
+
+###  https://w3id.org/trace/trov/0.1#CanIsolateEnvironment
+<https://w3id.org/trace/trov/0.1#CanIsolateEnvironment> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                        rdfs:comment "The TRS can prevent access to the host environment during a TRP (e.g., sandbox or container execution)." ;
+                                                        rdfs:label "CanIsolateEnvironment" .
+
+
+###  https://w3id.org/trace/trov/0.1#CanPreventAuthorIntervention
+<https://w3id.org/trace/trov/0.1#CanPreventAuthorIntervention> rdf:type owl:NamedIndividual ,
+                                                                        <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                               rdfs:comment "The TRS can prevent author intervention during a TRP (e.g., fully automated execution)." ;
+                                                               rdfs:label "CanPreventAuthorIntervention" .
+
+
+###  https://w3id.org/trace/trov/0.1#CanPreventUserInteractionDuringRun
+<https://w3id.org/trace/trov/0.1#CanPreventUserInteractionDuringRun> rdf:type owl:NamedIndividual ,
+                                                                              <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                                     rdfs:comment "The TRS can prevent user interaction during a TRP." ;
+                                                                     rdfs:label "CanPreventUserInteractionDuringRun" .
+
+
+###  https://w3id.org/trace/trov/0.1#CanProvideInternetIsolation
+<https://w3id.org/trace/trov/0.1#CanProvideInternetIsolation> rdf:type owl:NamedIndividual ,
+                                                                       <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                              rdfs:comment "The TRS can isolate computations from network access during a TRP." ;
+                                                              rdfs:label "CanProvideInternetIsolation" .
+
+
+###  https://w3id.org/trace/trov/0.1#CanRecordInternetAccess
+<https://w3id.org/trace/trov/0.1#CanRecordInternetAccess> rdf:type owl:NamedIndividual ,
+                                                                   <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                          rdfs:comment "The TRS can record all network accesses made during a TRP." ;
+                                                          rdfs:label "CanRecordInternetAccess" .
+
+
+###  https://w3id.org/trace/trov/0.1#CanRecordSoftwareEnvironment
+<https://w3id.org/trace/trov/0.1#CanRecordSoftwareEnvironment> rdf:type owl:NamedIndividual ,
+                                                                        <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                               rdfs:comment "The TRS can record a full description of the software environment." ;
+                                                               rdfs:label "CanRecordSoftwareEnvironment" .
+
+
+###  https://w3id.org/trace/trov/0.1#CanRequireInputDataExistsBeforeRun
+<https://w3id.org/trace/trov/0.1#CanRequireInputDataExistsBeforeRun> rdf:type owl:NamedIndividual ,
+                                                                              <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                                     rdfs:comment "The TRS can require all input data exists prior to a TRP." ;
+                                                                     rdfs:label "CanRequireInputDataExistsBeforeRun" .
+
+
+###  https://w3id.org/trace/trov/0.1#CanRequireInputDataLocalBeforeRun
+<https://w3id.org/trace/trov/0.1#CanRequireInputDataLocalBeforeRun> rdf:type owl:NamedIndividual ,
+                                                                             <https://w3id.org/trace/trov/0.1#TRSCapability> ;
+                                                                    rdfs:comment "The TRS can require all input data is stored locally prior to a TRP." ;
+                                                                    rdfs:label "CanRequireInputDataLocalBeforeRun" .
+
+
+###  https://w3id.org/trace/trov/0.1#IncludesAllInputData
+<https://w3id.org/trace/trov/0.1#IncludesAllInputData> rdf:type owl:NamedIndividual ,
+                                                                <https://w3id.org/trace/trov/0.1#TROAttribute> ;
+                                                       rdfs:comment "The TRO composition includes all input data employed in creating the TRO." ;
+                                                       rdfs:label "IncludesAllInputData" .
+
+
+###  https://w3id.org/trace/trov/0.1#InternetAccessRecording
+<https://w3id.org/trace/trov/0.1#InternetAccessRecording> rdf:type owl:NamedIndividual ,
+                                                                   <https://w3id.org/trace/trov/0.1#TRPAttribute> ;
+                                                          rdfs:comment "All network accesses during the TRP were recorded." ;
+                                                          rdfs:label "InternetAccessRecording" .
+
+
+###  https://w3id.org/trace/trov/0.1#InternetIsolation
+<https://w3id.org/trace/trov/0.1#InternetIsolation> rdf:type owl:NamedIndividual ,
+                                                             <https://w3id.org/trace/trov/0.1#TRPAttribute> ;
+                                                    rdfs:comment "The TRP was conducted without network access." ;
+                                                    rdfs:label "InternetIsolation" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://w3id.org/trace/trov/0.1#hash> rdfs:comment "One or more hashes of an artifact's contents or of a composition's sorted artifact hash values." ;
+                                       rdfs:label "hash" .
+
+
+<https://w3id.org/trace/trov/0.1#warrantedBy> rdfs:comment "Links a transparency attribute to the capability or attribute that warrants it." ;
+                                              rdfs:label "warrantedBy" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
